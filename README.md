@@ -6,3 +6,4 @@ What I need help with:
 3. Include graphs to "figures" in table of contents.
 4. Eliminate blank spaces in pdf output.
 5. Exclude the dataframe output (only inlcude tables).
+6. Increase size of long tables and make them span multiple pages.
