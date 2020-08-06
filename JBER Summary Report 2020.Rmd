@@ -2,12 +2,15 @@
 title: "ABUNDANCE, HABITAT ASSOCIATIONS, AND MIGRATORY CONNECTIVITY OF BIRD SPECIES OF SPECIAL CONCERN ON JOINT BASE ELMENDORF-RICHARDSON, ALASKA"
 subtitle: "2020 SUMMARY REPORT"
 author:
-- "Submitted to:  \n Cassandra Schoofs  \n Biological Scientist (Environmental)  \n USAF PACAF 673d CES/CEIEC  \n Joint Base Elmendorf-Richardson, AK" 
+- "Submitted to:  \n Cassandra Schoofs  \n Biological Scientist (Environmental)  \n USAF PACAF 673d CES/CEIEC  \n Joint Base Elmendorf-Richardson, AK"  
 - "Prepared by:  \n Laura McDuffie  \n U.S. Fish and Wildlife Service, \n Migratory Bird Management  \n 1011 East Tudor Road, MS 201,  \n Anchorage, Alaska 99503  \n laura_mcduffie@fws.gov"
 output:
    pdf_document:
       fig_caption: true
       number_sections: true
+      fig_width: 7
+      fig_height: 4
+      df_print: kable
 fontsize: 12pt
 geometry: margin=1in
 always_allow_html: TRUE
@@ -24,28 +27,94 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Acronyms and Abbreviations
-ADF&G &nbsp; &nbsp; Alaska Department of Fish and Game  
-ARU &nbsp; &nbsp; &nbsp;&nbsp;&nbsp Automated Recording Unit  
-BBA &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Breeding Bird Atlas  
-BBS &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Breeding Bird Survey  
-BCR &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Bird Conservation Region  
-BPIF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Boreal Partners in Flight  
-CEIEC &nbsp;&nbsp;&nbsp;Natural Resources Element, Conservation and Compliance  
-CES &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Civil Engineer Squadron  
-DoD &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Department of Defense  
-DOI &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Department of Interior  
-ERF &nbsp; &nbsp; &nbsp; &nbsp; Eagle River Flats (Joint Base Elmendorf-Richardson)  
-GPS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Global Positioning System  
-JBER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Joint Base Elmendorf-Richardson  
-MBM &nbsp; &nbsp; &nbsp; &nbsp;  Migratory Bird Management (U.S. Fish and Wildlife Service)  
-MWH &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; MWH Americas, Inc.  
-NWI &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; National Wetlands Inventory  
-PIF &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Partners in Flight  
-SOSC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Species of Special Concern  
-UAA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  University of Alaska Anchorage  
-USDA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U.S. Department of Agriculture  
-USFWS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U.S. Fish and Wildlife Service  
-USGS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U.S. Geological Survey
+ADF&G
+
+:   Alaska Department of Fish and Game
+
+ARU
+
+:   Automated Recording Unit
+
+BBA
+
+:   Breeding Bird Atlas
+
+BBS
+
+:   Breeding Bird Survey
+
+BCR
+
+:   Bird Conservation Region
+
+BPIF
+
+:   Boreal Partners in Flight
+
+CEIEC
+
+:   Natural Recources Element, Conservation and Compliance
+
+CES
+
+:   Civil Engineer Squadron
+
+DoD
+
+:   Department of Defense
+
+DOI
+
+:   Department of Interior
+
+ERF
+
+:   Eagle River Flats
+
+GPS
+
+:   Global Positioning System
+
+JBER
+
+:   Joint Base Elmendorf-Richardson
+
+MBM
+
+:   Migratory Bird Management (U.S. Fish and Wildlife Service)
+
+MWH
+
+:   MWH Americas, Inc.
+
+NWI
+
+:   National Wetlands Inventory 
+
+PIF
+
+:   Partners in Flight
+
+SOSC
+
+:   Species of Special Concern
+
+UAA
+
+:   University of Alaska Anchorage
+
+USDA
+
+:   U.S. Department of Agriculture
+
+USFWS
+
+:   U.S. Fish and Wildlife Service
+
+USGS
+
+:   U.S. Geological Survey
+
 
 \newpage
 
@@ -55,58 +124,64 @@ Many of North America's most rapidly declining avifauna breed in the boreal ecos
 \newpage
 
 ## Introduction
-The Sikes Act Section 101(a) (16 U.S. Code 670(a)) requires that Department of Defense installations prepare an Integrated Natural Resource Management Plan (INRMP) to conserve and restore natural resources on military installations, and ensure all military activities align with environmental stewardship, laws and regulations, and the mission of the Department of Defense (DoD). The United States Air Force (USAF) environmental program developed through the INRMP advocates for natural resource stewardship, including the conservation of avian communities and habitats. A plan recently outlined by the DoD, *Strategic Plan for Bird Conservation and Management on Department of Defense Lands* (DoD 2014) aims to manage and conserve resident and migratory bird species and their habitats on DoD lands, while maintaining mission readiness resources for military training purposes. \par Avian species associated with boreal wetlands are among the continents most rapidly declining avifauna. Of particular concern are the precipitous range-wide declines since 1970 of Blackpoll Warblers (-4.5% / yr.), Rusty Blackbirds (-3.5% / yr.), Olive-sided Flycatchers (-3.0% / yr.), Lesser Yellowlegs (-2.2% / yr.), and Solitary Sandpipers (0.01% / yr.; Sauer et al. 2017). Between 199 - 2015 in the Northwestern Interior Forest Bird Conservation Region (BCR) of Alaska, the same species experienced population declines or minimal growth; Blackpoll Warblers (-2.3% / yr.), Rusty Blackbirds (0.4% / yr.), Olive-sided Flycatchers (-1.2% / yr.), Lesser Yellowlegs (- 2.0% / yr.), and Solitary Sandpipers (-1.3% / yr.; Handel and Sauer 2017). These species, designated as Species of Special Concern (SOSC), have lost an estimated 50 - 90% of their populations and most are projected to lose an additional 50% within the next 15 - 25 years (Rosenberg et al. 2019, Rosenberg et al. 2016).\par State and continental conservation planning efforts have emphasized the need to determine demographic deficits, key habitats, linkages between breeding and wintering populations, contaminant burdens, and the incidence of disease among SOSC populations (Alaska Shorebird Group 2008, DoD Partners in Flight [PIF] 2015, Alaska Department of Fish and Game 2015, U.S. Shorebird Conservation Plan Partnership 2016, Boreal Partners in Flight 2017). Such information is urgently required to identify the mechanisms driving declines, help direct conservation and management of important areas and habitats, and ultimately help reverse avian population declines before more costly recovery efforts are required. \par Department of Defense has a long history of supporting bird studies in Alaska, with the overarching goal to maintain the health of migratory and resident bird populations and their supporting habitats to allow for flexibility in military operations (DoD PIF 2015).  Efforts to characterize the Joint Base Elmendorf-Richardson (JBER) avifauna were first initiated by U.S. Fish and Wildlife Service (USFWS) in 1994 with the establishment of an intensive inventory and monitoring effort that consisted of North American Breeding Bird Surveys [link](https://www.pwrc.usgs.gov/bbs/.com), Breeding Bird Atlas [link](https://www.pwrc.usgs.gov/bba/index.cfm?fa=bba.Bbahome.com), and Monitoring Avian Productivity and Survivorship [link](www.birdpop.org/pages/maps.php) programs (Browne and Andres 2002, Andres 2005). \par In 2007, the Alaska Department of Fish and Game (ADF&G) and USFWS began a comprehensive research effort to describe breeding ecology and reproductive rates of Rusty Blackbirds on JBER. Several publications resulted from this effort, which highlighted the importance of DoD lands in Alaska for Rusty Blackbirds (Matsuoka et al. 2010a, Matsuoka et al. 2010b). MWH Americas Inc. (MWH) was contracted by 673d Civil Engineering Squadron/Civil Engineering Installation Environmental Conservation (673d CES/CEIEC) to build upon these efforts by expanding the extent of surveys to include several additional SOSC primarily associated with boreal wetlands. With input from USFWS, MWH surveyed wetlands during 2014 - 2015 to further establish baseline information on the abundance and distribution of wetland-associated SOSC (MWH Americas, Inc. 2015). \par Since 2015, a collaborative effort between ADF&G, DoD, and USFWS continues to fill important information gaps for five SOSC on JBER: Solitary Sandpiper, Lesser Yellowlegs, Olive-sided Flycatcher, Rusty Blackbird, and Blackpoll Warbler. Primary objectives include: (1) develop and implement a robust survey and monitoring program to determine relative abundance and critical nesting habitat for wetland-associated SOSC, (2) implement avian surveys to assist with Environmental Impact Statement (EIS) reports, (3) capture and individually band SOSC as a means to estimate apparent adult survival, and (4) attach small tracking devices to SOSC, as well as Greater Yellowlegs and Short-billed Dowitcher, to determine local habitat selection on JBER and migratory connectivity between breeding and non-breeding locations. In addition, we collect occupancy data on seven focal species with suspected or known population declines: Common Loon, Red-throated Loon, Red-necked Grebe, Lesser Scaup, Greater Yellowlegs, Short-billed Dowitcher, Long-billed Dowitcher, and Wilson's Snipe. \par Results from monitoring and tracking efforts complement the Birds and Bogs program, a citizen science program organized by Audubon Alaska and the University of Alaska Anchorage (UAA) that aims to document the distribution and abundance of wetland-associated boreal bird species in Anchorage, JBER, and the Matanuska-Susitna Valley (Mat-Su). A current UAA graduate student will use the data collected by both studies to examine habitat use patterns among wetlands within urban (Anchorage and Mat-Su) and non-urban (JBER) areas. Information from the migration tracking are used to investigate range-wide patterns of migratory connectivity and habitat use, and will be published as part of a Masters thesis. All information collected during surveys and tracking studies are imported annually to the DoD avifaunal database (ADAML); a program used to organize, summarize, and display geographically referenced avian information for DoD installations in Alaska.  
+The Sikes Act Section 101(a) (16 U.S. Code 670(a)) requires that Department of Defense installations prepare an Integrated Natural Resource Management Plan (INRMP) to conserve and restore natural resources on military installations, and ensure all military activities align with environmental stewardship, laws and regulations, and the mission of the Department of Defense (DoD). The United States Air Force (USAF) environmental program developed through the INRMP advocates for natural resource stewardship, including the conservation of avian communities and habitats. A plan recently outlined by the DoD, *Strategic Plan for Bird Conservation and Management on Department of Defense Lands* (DoD 2014) aims to manage and conserve resident and migratory bird species and their habitats on DoD lands, while maintaining mission readiness resources for military training purposes. \par Avian species associated with boreal wetlands are among the continents most rapidly declining avifauna. Of particular concern are the precipitous range-wide declines since 1970 of Blackpoll Warblers (-4.5% / yr.), Rusty Blackbirds (-3.5% / yr.), Olive-sided Flycatchers (-3.0% / yr.), Lesser Yellowlegs (-2.2% / yr.), and Solitary Sandpipers (0.01% / yr.; Sauer et al. 2017). Between 199 - 2015 in the Northwestern Interior Forest Bird Conservation Region (BCR) of Alaska, the same species experienced population declines or minimal growth; Blackpoll Warblers (-2.3% / yr.), Rusty Blackbirds (0.4% / yr.), Olive-sided Flycatchers (-1.2% / yr.), Lesser Yellowlegs (- 2.0% / yr.), and Solitary Sandpipers (-1.3% / yr.; Handel and Sauer 2017). These species, designated as Species of Special Concern (SOSC), have lost an estimated 50 - 90% of their populations and most are projected to lose an additional 50% within the next 15 - 25 years (Rosenberg et al. 2019, Rosenberg et al. 2016).\par State and continental conservation planning efforts have emphasized the need to determine demographic deficits, key habitats, linkages between breeding and wintering populations, contaminant burdens, and the incidence of disease among SOSC populations (Alaska Shorebird Group 2008, DoD Partners in Flight [PIF] 2015, Alaska Department of Fish and Game 2015, U.S. Shorebird Conservation Plan Partnership 2016, Boreal Partners in Flight 2017). Such information is urgently required to identify the mechanisms driving declines, help direct conservation and management of important areas and habitats, and ultimately help reverse avian population declines before more costly recovery efforts are required. \par Department of Defense has a long history of supporting bird studies in Alaska, with the overarching goal to maintain the health of migratory and resident bird populations and their supporting habitats to allow for flexibility in military operations (DoD PIF 2015).  Efforts to characterize the Joint Base Elmendorf-Richardson (JBER) avifauna were first initiated by U.S. Fish and Wildlife Service (USFWS) in 1994 with the establishment of an intensive inventory and monitoring effort that consisted of North American Breeding Bird Surveys [link](https://www.pwrc.usgs.gov/bbs/.com), Breeding Bird Atlas [link](https://www.pwrc.usgs.gov/bba/index.cfm?fa=bba.Bbahome.com), and Monitoring Avian Productivity and Survivorship [link](www.birdpop.org/pages/maps.php) programs (Browne and Andres 2002, Andres 2005). \par In 2007, the Alaska Department of Fish and Game (ADF&G) and USFWS began a comprehensive research effort to describe breeding ecology and reproductive rates of Rusty Blackbirds on JBER. Several publications resulted from this effort, which highlighted the importance of DoD lands in Alaska for Rusty Blackbirds (Matsuoka et al. 2010a, Matsuoka et al. 2010b). MWH Americas Inc. (MWH) was contracted by 673d Civil Engineering Squadron/Civil Engineering Installation Environmental Conservation (673d CES/CEIEC) to build upon these efforts by expanding the extent of surveys to include several additional SOSC primarily associated with boreal wetlands. With input from USFWS, MWH surveyed wetlands during 2014 - 2015 to further establish baseline information on the abundance and distribution of wetland-associated SOSC (MWH Americas, Inc. 2015). \par Since 2015, a collaborative effort between ADF&G, DoD, and USFWS continues to fill important information gaps for five SOSC on JBER: Solitary Sandpiper, Lesser Yellowlegs, Olive-sided Flycatcher, Rusty Blackbird, and Blackpoll Warbler. Primary objectives include: (1) develop and implement a robust survey and monitoring program to determine relative abundance and critical nesting habitat for wetland-associated SOSC, (2) implement avian surveys to assist with Environmental Impact Statement (EIS) reports, (3) capture and individually band SOSC as a means to estimate apparent adult survival, and (4) attach small tracking devices to SOSC, as well as Greater Yellowlegs and Short-billed Dowitcher, to determine local habitat selection on JBER and migratory connectivity between breeding and non-breeding locations. In addition, we collect occupancy data on seven focal species with suspected or known population declines: Common Loon, Red-throated Loon, Red-necked Grebe, Lesser Scaup, Greater Yellowlegs, Short-billed Dowitcher, Long-billed Dowitcher, and Wilson's Snipe.  \par Results from monitoring and tracking efforts complement the Birds and Bogs program, a citizen science program organized by Audubon Alaska and the University of Alaska Anchorage (UAA) that aims to document the distribution and abundance of wetland-associated boreal bird species in Anchorage, JBER, and the Matanuska-Susitna Valley (Mat-Su). A current UAA graduate student will use the data collected by both studies to examine habitat use patterns among wetlands within urban (Anchorage and Mat-Su) and non-urban (JBER) areas. Information from the migration tracking are used to investigate range-wide patterns of migratory connectivity and habitat use, and will be published as part of a Masters thesis. All information collected during surveys and tracking studies are imported annually to the DoD avifaunal database (ADAML); a program used to organize, summarize, and display geographically referenced avian information for DoD installations in Alaska.
 
 ## Study Area
-Rising from sea level to an elevation over 1,500 m, JBER encompasses a variety of habitat types including estuarine and freshwater wetlands (Figure 1), shrublands, broadleaf and coniferous forests, and alpine tundra (Figure 2).  Despite long-term training activities across the installation, JBER contains the largest continuous extent of natural, low-elevation habitats in Anchorage (Andres 2005). For a detailed description of habitats see Jorgenson et al. (1998), Browne and Andres (2002), Andres et al. (2005), Matsuoka et al. (2010), and MWH Americas Inc. (2015). 
-
-![Joint Base Elmendorf-Richardson is comprised of variable habitat types from boreal wetlands and tidal influenced mudflats to alpine ridgelines. Eagle River Flats was the focus of Lesser Yellowlegs captures in late June 2020.](./ERF_Sunrise.jpg){width=80%}  
+Rising from sea level to an elevation over 1,500 m, JBER encompasses a variety of habitat types including estuarine and freshwater wetlands, shrublands, broadleaf and coniferous forests, and alpine tundra (Figure 1).  Despite long-term training activities across the installation, JBER contains the largest continuous extent of natural, low-elevation habitats in Anchorage (Andres 2005). For a detailed description of habitats see Jorgenson et al. (1998), Browne and Andres (2002), Andres et al. (2005), Matsuoka et al. (2010), and MWH Americas Inc. (2015).
 
 \par
 
-![Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird](./Snowhawk.jpg){width=80%}
+![Left: Eagle River Flats at sunrise. Tidal mudflats provide forage for shorebird species including Lesser Yellowlegs and Short-billed Dowitcher. Right: Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird. ](./habitat.jpg)
+
+\newpage 
+
 
 ## Methods
 ### Wetland Area Surveys: Study Design
-Our sampling universe included freshwater wetlands ~150m in elevation within JBER boundaries. In the lowlands, we treated wetland bodies as sampling units because of their discreteness within a matrix of boreal forest habitat. We used a two-tiered approach to select wetland-sampling units: (1) non-random and (2) stratified random. Non-random units, also known as core units, were wetlands selected for their expected value to Rusty Blackbirds (see Matsuoka et al. 2010 for details). Typically, these wetlands were seasonally or permanently flooded and included shorelines of lakes, ponds, and rivers with emergent vegetation, seasonally flooded scrub-shrub, or forests. A 50-m buffer around wetlands added potential nesting sites for Rusty Blackbirds in adjacent non-flooded wetlands or upland forest. When buffers of adjacent units overlapped, they were combined into a single unit. This non-random selection process resulted in 27 lowland units that ranged in size from 1 - 139 ha (see Matsuoka et al. 2009; Figure 3). We only conducted breeding bird surveys on core units in 2020. \par To select stratified random sampling units for the breeding bird surveys, we used a spatial layer created by the National Wetlands Inventory (NWI; Cowardin et al. 1979) that was modified by MWH Americas Inc (2015), and updated annually by JBER. NWI classes were combined into three general habitat types: (1) emergent vegetation (permanently flooded by wetlands), (2) scrub- shrub (willow [Salix] spp. and alder [Alnus] spp. shrublands occurring on saturated soils to areas seasonally flooded by freshwater), and (3) forested wetlands (black spruce [Picea mariana] dominated forest occurring on saturated soils to areas seasonally flooded by freshwater). We excluded two additional wetland habitat classes from the selection process: (1) estuarine (all wetlands influenced by marine waters year round), and (2) ponds, lakes, and rivers, because these open waterbodies do not provide potential nesting habitat for SOSC or focal species. The amount of each habitat type in each wetland was measured in hectares, and units were assigned to the habitat type that covered the largest area. We ranked the three general wetland classes based on their expected suitability to SOSC breeding requirements: emergent = good, scrub-shrub = medium, and forest = poor. Sample allocation was weighted so that emergent and scrub- shrub dominated wetlands were selected at a higher proportion relative to their availability compared to forested wetlands. We conducted surveys during two periods that corresponded with peak detectability of (1) migratory waterbirds, resident and Nearctic migratory passerines (15 - 17 May); and (2) Neotropical migratory passerines (29-31 May). We conducted surveys 6:00 - 12:00 during the first period and 5:00 - 11:00 during the second period. We postponed surveys during periods of fog, steady rain, and/or wind exceeding 20 km/h. Directional photographs were taken at the midpoint of each survey unit as a means to compare successional vegetation growth over time (Figure 4). \par We used the area search method to survey breeding bird occupancy. Surveyors covered 10 ha/hr while attempting to pass within 100 m of any location inside a unit. Surveyors mapped observations of SOSC and focal species on aerial photographs, using codes for pairs, males, females, unknown sex, and groups. Surveyors noted behaviors to determine whether birds were territorial and breeding on the units or were non- breeding migrants. Surveyors differentiated between actual and estimated pairs. An actual pair was defined as two birds together exhibiting breeding behavior. An estimated pair was defined as (1) a territorial individual (displaying shorebird, singing passerine, or alarm-calling individual of either sex), or (2) a single female (only applicable for Rusty Blackbirds and Blackpoll Warblers due to plumage sexual dimorphism). A bird was recorded on a unit if ~50% of its territory appeared to be within the unit boundary. Immediately after each survey, surveyors transcribed the number of individuals and pairs to a data sheet. In addition, surveyors recorded (but did not map) the total number of non-SOSC individuals detected within and outside the boundaries of each unit.
-
-![Core boreal wetland survey units selected in 2020 ](./SurveyUnits.jpg){width=70%}
+Our sampling universe included freshwater wetlands ~150m in elevation within JBER boundaries. In the lowlands, we treated wetland bodies as sampling units because of their discreteness within a matrix of boreal forest habitat. We used a two-tiered approach to select wetland-sampling units: (1) non-random and (2) stratified random. Non-random units, also known as core units, were wetlands selected for their expected value to Rusty Blackbirds (see Matsuoka et al. 2010 for details). Typically, these wetlands were seasonally or permanently flooded and included shorelines of lakes, ponds, and rivers with emergent vegetation, seasonally flooded scrub-shrub, or forests. A 50-m buffer around wetlands added potential nesting sites for Rusty Blackbirds in adjacent non-flooded wetlands or upland forest. When buffers of adjacent units overlapped, they were combined into a single unit. This non-random selection process resulted in 27 lowland units that ranged in size from 1 - 139 ha (see Matsuoka et al. 2009; Figure 2). We only conducted breeding bird surveys on core units in 2020. 
 
 \par
 
-![Core boreal wetland survey units selected in 2020 ](./direct.jpg){width=70%}
+![Core boreal wetland survey units selected in 2020. ](./SurveyUnits.jpg){width=95%}
 
-\newpage
+\par
+
+To select stratified random sampling units for the breeding bird surveys, we used a spatial layer created by the National Wetlands Inventory (NWI; Cowardin et al. 1979) that was modified by MWH Americas Inc (2015), and updated annually by JBER. NWI classes were combined into three general habitat types: (1) emergent vegetation (permanently flooded by wetlands), (2) scrub- shrub (willow [Salix] spp. and alder [Alnus] spp. shrublands occurring on saturated soils to areas seasonally flooded by freshwater), and (3) forested wetlands (black spruce [Picea mariana] dominated forest occurring on saturated soils to areas seasonally flooded by freshwater). We excluded two additional wetland habitat classes from the selection process: (1) estuarine (all wetlands influenced by marine waters year round), and (2) ponds, lakes, and rivers, because these open waterbodies do not provide potential nesting habitat for SOSC or focal species. The amount of each habitat type in each wetland was measured in hectares, and units were assigned to the habitat type that covered the largest area. We ranked the three general wetland classes based on their expected suitability to SOSC breeding requirements: emergent = good, scrub-shrub = medium, and forest = poor. Sample allocation was weighted so that emergent and scrub- shrub dominated wetlands were selected at a higher proportion relative to their availability compared to forested wetlands. We conducted surveys during two periods that corresponded with peak detectability of (1) migratory waterbirds, resident and Nearctic migratory passerines (15 - 17 May); and (2) Neotropical migratory passerines (29-31 May). We conducted surveys 6:00 - 12:00 during the first period and 5:00 - 11:00 during the second period. We postponed surveys during periods of fog, steady rain, and/or wind exceeding 20 km/h. Directional photographs were taken at the midpoint of each survey unit as a means to compare successional vegetation growth over time. \par We used the area search method to survey breeding bird occupancy. Surveyors covered 10 ha/hr while attempting to pass within 100 m of any location inside a unit. Surveyors mapped observations of SOSC and focal species on aerial photographs, using codes for pairs, males, females, unknown sex, and groups. Surveyors noted behaviors to determine whether birds were territorial and breeding on the units or were non- breeding migrants. Surveyors differentiated between actual and estimated pairs. An actual pair was defined as two birds together exhibiting breeding behavior. An estimated pair was defined as (1) a territorial individual (displaying shorebird, singing passerine, or alarm-calling individual of either sex), or (2) a single female (only applicable for Rusty Blackbirds and Blackpoll Warblers due to plumage sexual dimorphism). A bird was recorded on a unit if ~50% of its territory appeared to be within the unit boundary. Immediately after each survey, surveyors transcribed the number of individuals and pairs to a data sheet. In addition, surveyors recorded (but did not map) the total number of non-SOSC individuals detected within and outside the boundaries of each unit.
 
 ### ERF Proposed Expansion Survey: Study Design
 During 2020, the USFWS crew conducted avian point count surveys within a proposed expansion area on the north side of Eagle River flats. Point count surveys used the distance sampling methods (Buckland et al. 2001) following the Alaska Landbird Monitoring Survey (ALMS) protocol (Handel et al. 2019) for conducting off-road point counts in Alaska. The ALMS protocol was designed to monitor changes in bird populations over time, and has been used to provide population trend estimates of breeding birds throughout Alaska (Handel & Sauer 2017). \par To select point count locations, we overlaid a 500m x 500m grid centered on the midpoint of the proposed expansion area. The size of the expansion area determined the number of survey points. We selected the 10-point count locations that fell with the expansion area boundary (Figure 5). Point selection was not influenced by accessibility or slope, and it was up to the observer's discretion whether or not a point was safe to access; however, all points were deemed safe during the initial survey period. \par Each survey conducted was 10 minutes in length and completed twice in the season (23 May and 6 June). Surveys began at 5:30 and were completed prior to 8:00.  We did not conduct surveys during weather conditions that influenced 1) a bird's behavior and 2) our ability to detect a bird. We chose to postpone any ongoing surveys during periods of fog, steady rain, and/or wind exceeding 15 mph. We recorded the temperature, wind speed, and sky conditions at the start and end of each survey period using a Kestrel Wind Meter and the Beaufort wind scale. Observers approached each survey point with minimal disturbance and began the survey immediately upon arrival. Each survey was conducted by a single observer. The observer recorded species, time interval (0-3 min, 3-5 min, 5-8 min, 8-10 min), behavior (i.e. singing, calling, flight display, etc.), and distance interval for all individual birds or groups of birds associating together. Horizontal distance from the observer to the bird(s) were recorded in 10 m increments out to 100 m, 25 m increments from 101-150 m, and 50 m increments from 151 - 400 m. Any detections beyond 400 m were denoted as greater than 400 m. A range finder was used by all observers to accurately measure and estimate distances. Observers recorded all observations on a circular map during the survey and summarized observation in a table immediately following each survey. Directional photos (N, S, E, and W) were collected at each point as a habitat reference. Finally, each observer recorded the species of mammals and birds detected between point count locations.
 
-![Point count locations within the Eagle River Flats proposed expansion area](./ERFExpansion.jpg){width=80%}
+\par
+
+![Point count locations within the Eagle River Flats proposed expansion area](./ERFExpansion.jpg){width=60%}
 
 \newpage
 
 ### Automated Recording Units
 In 2019 and 2020, the USFWS crew and 673d Civil Engineer Squadron biologist Chris Garner, deployed Automated Recording Units (ARU) within the boundary of Eagle River Flats. In 2019, four units were placed along Eagle River and 2 units were placed on the eastern edge of the flats. In 2020, seven units were deployed along the southern, eastern, and northern edges of the flats (Figure 6). All units were programmed to collect bird vocalizations 4 hours after sunrise, 12:00-13:00, 16:00-17:00, and 1 hour before sunset from May through September. The units collect daily bird species occupancy data and do not require personnel to be present.
 
-![ARU locations on Eagle River Flats in 2019 and 2020. Two units were placed in the same location on the eastern edge of Eagle Rier Flats in both years](./ARU_locations.jpg){width=80%}
+\par
+
+![ARU locations on Eagle River Flats in 2019 and 2020. Two units were placed in the same location on the eastern edge of Eagle Rier Flats in both years](./ARU_locations.jpg){width=60%}
+
+\newpage
 
 ### Nest searching
 In 2020, we spent the early portion of the breeding season (May 15- June 1) searching for Lesser Yellowlegs and Wilson's Snipe nests. We searched for Lesser Yellowlegs as part of a continuing study aimed at understanding breeding success, adult survival and migratory connectivity (Figure 7). We searched for Wilson's Snipe nests as part of a collaborative study with Max Planck Institute of Ornithology. The goal was to examine the incubation rates of uniparental shorebirds.  \par To find nests, we observed bird's behavior from a distance; mapped their locations and movements; and followed them back to their nests as they returned to incubate eggs. We recorded the location of each nest in a Global Positioning System (GPS) and collected information included the number of eggs observed, dimensions of each egg, float angle (used to determine age of eggs and to estimate hatch), and habitat type. Once found, Lesser Yellowlegs nests were monitored by motion-activated game cameras placed near each nest and temperature data logger probes (TinyTag, Gemini Data Loggers Ltd, Chichester, West Sussex, UK) placed in the center of each nest (Figure 8). Cameras were used to help us determine the cause of a nest failure (e.g. predation), while the temperature loggers were used to determine how frequently birds incubate during the 23-day incubation period. To monitor Wilson's Snipe nests, we deployed temperature loggers (MSR, MSR Electronics, Seuzach, Switzerland) that were programmed to record the duration of incubation during a 24-hour period. Nest cameras were not utilized for Wilson's Snipe nest monitoring. 
 
+\par
 
-![Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands](./LEYEnest.jpg){width=80%}
+![Left: Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands. Right: Placemnet of TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./leye_probe.jpg)
+
+\newpage
+
+### Captures and GPS tag deployment
+In 2020, we captured and banded Lesser Yellowlegs, Greater Yellowlegs, Solitary Sandpiper, and Blackpoll Warbler. The majority of shorebird captures occurred 1-3 days post hatch when adults were most responsive to chick calls. During early brood rearing, adults are extremely responsive to recordings of conspecific chick alarm calls. We captured adults by laying a mist net flat over tall grass or perpendicular to the ground and playing a chick distress call near the center of the net. The adults either walk under or fly into the net. In rare instances, adults that will not land on the ground near the net are trapped using a mist net swung vertically as a bird flys over. In addition to on-brood captures, in 2020 we also attempted passive captures of foraging Lesser Yellowlegs on the edge of Eagle River Flats. We set-up six vertical mist nets in an area we observed to have a high concentration of foraging Lesser Yellowlegs. We placed a wireless speaker in the center of the net set-up and played a foraging call as an attractant. \par Following captures, we attached a single aluminum U.S. Geological Survey (USGS) band, green color band, and dark green flag engraved with a white two-character alpha code (following the Pan-American Shorebird Program 2016; Figure 9). We attached PinPoint Argos GPS tags via a leg loop harness backpack to birds weighing at or over 80 grams (Rappole 1991). Finally, we recorded morphometrics (Figure 10) and collected biological samples from all banded birds. From each bird, we collected three blood samples: (1) genetic analysis (genoscape), (2) mercury contamination testing, and (3) molecular sexing. Additionally, we collected secondary feather and claw samples for use in a future stable isotope analysis.  
 
 \par
 
-![Placemnet of TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./nest_probe.jpg){width=80%}
 
-### Captures and GPS tag deployment
-In 2020, we captured and banded Lesser Yellowlegs, Greater Yellowlegs, Solitary Sandpiper, and Blackpoll Warbler. The majority of shorebird captures occurred 1-3 days post hatch when adults were most responsive to chick calls. During early brood rearing, adults are extremely responsive to recordings of conspecific chick alarm calls. We captured adults by laying a mist net flat over tall grass or perpendicular to the ground and playing a chick distress call near the center of the net. The adults either walk under or fly into the net. In rare instances, adults that will not land on the ground near the net are trapped using a mist net swung vertically as a bird flys over. In addition to on-brood captures, in 2020 we also attempted passive captures of foraging Lesser Yellowlegs on the edge of Eagle River Flats. We set-up six vertical mist nets in an area we observed to have a high concentration of foraging Lesser Yellowlegs. We placed a wireless speaker in the center of the net set-up and played a foraging call as an attractant. \par Following captures, we attached a single aluminum U.S. Geological Survey (USGS) band, green color band, and dark green flag engraved with a white two-character alpha code (following the Pan-American Shorebird Program 2016; Figure 9). We attached PinPoint Argos GPS tags via a leg loop harness backpack to birds weighing at or over 80 grams (Rappole 1991). Finally, we recorded morphometrics (Figure 10) and collected biological samples from all banded birds. From each bird, we collected three blood samples: (1) genetic analysis (genoscape), (2) mercury contamination testing, and (3) molecular sexing. Additionally, we collected secondary feather and claw samples for use in a future stable isotope analysis.
-
-![Leg bands: Metal, plastic and alphanumeric flags](./bands.jpg){width=80%}
-
-![Measuring the diagonal tarsus of a Lesser Yellowlegs](./LEYEmorph.jpg){width=80%}
-
+![Left: Leg bands: Metal, plastic and alphanumeric flags. Right: Measuring the diagonal tarsus of a Lesser Yellowlegs ](./bands.jpg)
 \newpage
 
 ### Data Management
@@ -119,24 +194,18 @@ During the two survey periods (15 - 17 May and 29 - 31 May) we surveyed 27 core 
 #### All Species detections
 Inside survey unit boundaries, we detected a total of 2,674 individual birds comprised of 82 species. Taxonomic family groups included 15 waterfowl species, 1 crane species, 8 shorebird species, 2 loon and grebe species, 4 gull species, 5 hawk species, 4 woodpecker species, 1 falcon species, and 39 passerine species (Appendix A). \par The number of species and their total abundances varied between survey periods. We detected 56 species comprising 1,555 individuals during the first survey. The most commonly detected species within unit boundaries were Lincoln's Sparrow (13% of all individuals, 100% of units), Yellow-rumped Warbler (11% of all individuals, 70% of units), and Wilson's Snipe (10% of all individuals, 70% of units). This closely corresponds with results from previous years, where Lincoln's Sparrow, Yellow-rumped Warbler, and Dark-eyed Junco were the most commonly detected species during the first survey period. Additionally, several species were detected only during the first survey, including: Bald Eagle, Barrow's Goldeneye, Black-capped Chickadee, Brown Creeper, Common Loon, Downy Woodpecker, Fox Sparrow, Gadwall, Greater Scaup, Northern Goshawk, Northern Pintail, Red-breasted Nuthatch, Sandhill Crane and Violet-green Swallow. \par During the second survey period, we detected 43 species comprising 1,119 individuals. The most commonly detected individuals within unit boundaries were Lincoln's Sparrow (15% of all individuals, 81% of units), Wilson's Snipe (13% of all individuals, 78% of units), and Yellow-rumped Warbler (10% of all individuals, 67% of units). The results from the second survey follow a similar trend to previous survey years, and the earlier survey period in 2020, however, American Robin were detected more frequently in 2017 and 2019. Additionally, Blackpoll Warbler, Short-billed Dowitcher and Spotted Sandpiper were only detected during the second survey period. \par The differences in species composition indicates that two survey periods are required in order to differentiate between resident and early-arriving species (Nearctic migrants, waterbirds, and shorebirds), and late-arriving species (Neotropical migrant passerines). Late-arriving species such as Olive-sided Flycatcher, Alder Flycatcher, Swainson's Thrush and Blackpoll Warbler, were either not detected during the first survey or were more numerous during the second survey.
 
-![Blackpoll Warbler are a Neotropical migrant that breeding in the boreal forests of Alaska and Canada. This is a late arrive species that was only detected during the second survey period. The male's striking black and white plumage is contrary to the females' monocramatic olive-green plumage](./blpw.jpg){width=80%}
+\par
 
-```{r eval=TRUE}
-spacc1.2020<- read.csv("specaccum1_2020.csv", header = TRUE)
-spacc2.2020<- read.csv("specaccum2_2020.csv", header = TRUE)
+![Blackpoll Warbler are a Neotropical migrant that breeding in the boreal forests of Alaska and Canada. This is a late arrive species that was only detected during the second survey period. The male's striking black and white plumage is contrary to the females' monocramatic olive-green plumage](./blpw.jpg){width=60%}
+\newpage
 
-s1 <-colSums(spacc1.2020, na.rm = FALSE, dims = 1)
-s1[order(-s1)]
-
-s2 <-colSums(spacc2.2020, na.rm = FALSE, dims = 1)
-s2[order(-s2)]
-
-
-```
 #### Species of Special Concern Detections
 We recorded all five SOSC during the two survey periods. Lesser Yellowlegs were the most numerous and widespread SOSC species across JBER wetlands (Table 1). Overall, the number of SOSC individuals was less than in previous years, which we attribute to fewer units surveyed and a lack of nesting and foraging habitat at Otter Lake due to flooding by beaver dams (Figure 11). Lesser Yellowlegs were the most frequently detected SOSC species (63 total individuals) during both surveys, while Solitary Sandpipers, Olive-sided Flycatchers and Rusty Blackbirds were less abundant (18, 28 and 47 individuals, respectively). All SOSC occurred in similar numbers during survey periods, except for the Blackpoll Warbler, a Neotropical migrant, which we only detected during the second survey (2 individuals within unit boundaries).
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
+webshot::install_phantomjs()
+library(webshot)
+library(magick)
 library(knitr)
 library(DT)
 library(kableExtra)
@@ -162,21 +231,28 @@ kable(format="html",
                 full_width=FALSE, 
                 font_size = 14) %>%
     
-  add_header_above(c(" " = 1, "Survey 1 (May 15-17)" = 3, "Survey 2 (May 29-31)" = 3))
+  add_header_above(c(" " = 1, "Survey 1 (May 15-17)" = 3, "Survey 2 (May 29-31)" = 3)) %>%
 
-  as_image(sosc,file="table1.png")
+  as_image(sosc,file="table1.png", width = 24)
 
 ```
+\par
+
 Each SOSC's migration strategy and natural history characteristics clearly explain the patterns of detectability. Lesser Yellowlegs are both vocally and visually obvious throughout their breeding cycle, and arrive early. Solitary Sandpipers are much more reserved than Lesser Yellowlegs and are readily detectable only during displaying (advertising for mates) or defending broods. The Olive-sided Flycatcher is a long-distance migrant that winters in northern South America, and although highly detectable throughout their breeding cycle, they typically arrive in late May. Our data suggest that the first survey occurred before most individuals, likely females, had arrived to the nesting grounds. The Blackpoll Warbler is another long-distance migrant that winters in northern and central South America. Blackpoll Warblers are a late arriving species and are detectable when males are defending their territories in late-May and early-June. Rusty Blackbird, a relatively short-distance migrant that winters in the southern U.S., is an early-arriving species that is generally more obvious and vocal during courtship and nest building activities that overlapped most with the first survey. Again, survey results support the need for two survey periods to accurately detect this suite of SOSC. \par Preliminary analysis of habitat association of the SOSC suggested that Solitary Sandpipers and Lesser Yellowlegs were associated with wetlands dominated by emergent vegetation, Olive-sided Flycatchers were associated with shrub-dominated wetlands, and Rusty Blackbirds and Blackpoll Warbler were associated with forested wetlands (Figure 12).
 
-![Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands](./blpw_habitat.jpg){width=80%}
+\par
 
-![Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds.](./leye_habitat.jpg){width=80%}
+![Left: Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands. Right: Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds. ](./survey_habitat.jpg)
+
+\newpage
 
 ### Eagle River Flats Expansion: Point Counts
 In 2020, point count surveys were completed in the designated Eagle River Flats expansion area. The 10-point count locations were divided among four personnel and were completed between 6:00 and 9:00 on May 23 and June 6. We recorded 309 individuals comprised of 28 species across both survey periods.  \par Detection rates were high for most species groups except for raptors (hawks, owls, and falcons) and loons and grebes, which were detected at 0% and 20% of points, respectively. Passerines were the most commonly detected species group and recorded at 100% of survey points. Swainson's Thrush were detected at all point count locations, followed by Yellow-rumped Warbler (Myrtle), American Robin and Ruby-crowned Kinglet (90% of points). Additionally, Sandhill Crane were detected at all point count locations, however this species was always recorded beyond 100 m. Wilson's Snipe, Red-necked Grebe, Common Loon, Green-winged Teal, American Wigeon, Western Wood-Pewee, Tree Swallow, Hairy Woodpecker, Golden-crowned Kinglet, Canada Jay, Boreal Chickadee, Black-capped Chickadee, and Alder Flycatcher were detected at only one point count location. These results only reflect species detected during point counts, and do not include species detected between points. \par In addition to avian species, we collected information on mammals observed between point count locations. During the survey on 23 May, a pack of Grey Wolves was observed between survey points 1 and 3. On this same day, a moose with fresh wounds was observed standing in shallow water on the edge of Eagle River Flats ~155 m from survey point 1. When we returned to the location of the moose on 20 June, a moose carcass and wolf scat were present.
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
+webshot::install_phantomjs()
+library(webshot)
+library(magick)
 library(knitr)
 library(DT)
 library(kableExtra)
@@ -196,8 +272,9 @@ kable(format="html",
   
   kable_styling("bordered",
                 full_width=FALSE, 
-                font_size = 14) 
-  as_image(sosc,file="table2.png")
+                font_size = 14) %>%
+
+  as_image(erf.sp,file="table2.png", width = 18)
     
 ```
 
@@ -226,7 +303,7 @@ accurve2<-specaccum(spacc2.2020, method="collector", permutations=100)
 plot(accurve1, lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),
      xlab=" Number of Units Surveyed",
      ylab="Species Richness",
-     main="Figure XX: 2020 Survey")
+     main="Figure 10: 2020 Survey")
 plot(accurve2, lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),add = TRUE)
 legend(x=20,y=20,c("Survey Period 1","Survey Period 2"),cex=.8,col=c("blue","black"), lty = 1:1, box.lty=0)
 
@@ -244,7 +321,7 @@ accurve4<-specaccum(spacc1.2020, method="collector", permutations=100)
 plot(accurve1, lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),
      xlab=" Number of Units Surveyed",
      ylab="Species Richness",
-     main="Figure XX: Survey Period 1")
+     main="Figure 11: Survey Period 1")
 plot(accurve2, lty= 1, ci.type="line", col="green", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),add = TRUE)
 plot(accurve3, lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),add = TRUE)
 plot(accurve4, lty= 1, ci.type="line", col="red", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),add = TRUE)
@@ -265,13 +342,13 @@ accurve4<-specaccum(spacc2.2020, method="collector", permutations=100)
 plot(accurve1, lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30), ylim=c(0,60),
      xlab=" Number of Units Surveyed",
      ylab="Species Richness",
-     main="Figure XX: Survey Period 2")
+     main="Figure 12: Survey Period 2")
 plot(accurve2, lty= 1, ci.type="line", col="green", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30), ylim=c(0,60),add = TRUE)
 plot(accurve3, lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30), ylim=c(0,60),add = TRUE)
 plot(accurve4, lty= 1, ci.type="line", col="red", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30), ylim=c(0,60),add = TRUE)
 legend(x=20,y=20,c("2016", "2017", "2019", "2020"),cex=.8,col=c("black","green", "blue", "red"), lty = 1:1, box.lty=0)
 
-par(mfrow = c(1,3))
+par(mfrow = c(2,2))
 
 ```
 Species Richness Curves are valuable for examining actual detection trends, however, it is also useful to estimate how many species would be detected if our survey effort was increased. A Rarefaction Curve model estimates the total number of species detected representing any survey effort. For example, the rarefaction curves estimates that after 500 total individuals are observed, the predicted total number of species detected would be 45 for survey period 1 and 38 for survey period 2. Doubling the survey effort to 1,000 individuals predicts an expected total species number of 51 for period 1 and 39 for period 2. This a 13% increase for survey period 1 and a 3% increase for survey period 2. These low increase percentages suggests that additional species would likely not be breeders, and instead may represent early or late passage migrants, or wandering non-breeders, detected by chance while surveying breeding individuals. Increasing survey effort during migration periods in April and August will increase species totals among survey units. However, migratory birds use each unit differently depending on habitat type and proximity to Eagle River Flats, which supports migratory species (McDuffie et al. 2018).
@@ -283,7 +360,7 @@ rare1<- read.csv("rarefaction1_2020.csv", header = TRUE)
 rare2<- read.csv("rarefaction2_2020.csv", header = TRUE)
 
 plot(specaccum(rare1, method = "rarefaction"), 
-     xvar = "individuals", lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue",  xlab = "Number of Individuals", ylab="Species Richness", main= "Figure XX: Rerfaction Curves 2020")
+     xvar = "individuals", lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue",  xlab = "Number of Individuals", ylab="Species Richness", main= "Figure 13: Rerfaction Curves 2020")
 
 plot(specaccum(rare2, method = "rarefaction"), 
      xvar = "individuals", lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lightblue", add = TRUE)
@@ -307,7 +384,7 @@ ggplot(taxon, aes(x=year, y=n, group=taxon, colour=taxon)) +
     scale_y_log10( breaks=c(1,100,500,1000,3000), limits=c(1,3000))+
     ylab("number of individuals")+
     xlab("year") +
-    ggtitle("Figure XX: Detection Trends")+
+    ggtitle("Figure 14: Detection Trends")+
   scale_colour_discrete(labels=c("Loons and Grebes","Gulls","Raptors","Passerines","Shorebirds","Waterfowl"))
     
 
@@ -316,7 +393,7 @@ ggplot(taxon, aes(x=year, y=n, group=taxon, colour=taxon)) +
 ### Species Richness: ERF Point Counts
 Species richness and diversity varied across point count locations depending on habitat type and proximity to the edge of Eagle River Flats (Figure XX). For example, points located less than 500 m from the edge of the flats had the highest species richness, on average. This is likely because species vocalizations can carry long distances across the flats, and shorter distances through the hilly and forested terrain of the proposed expansion area. The further a point was located from the flats, the lower the species richness in most cases; however, habitat type clearly influenced species richness. \par To examine the potential influence of habitat type on species richness, we subset the species data to only include individuals present 100m radius or less from the centroid of the survey point. Dominant vegetation type was determined using the directional photos taken at each point count location. Coniferous dominated habitats occurred where at least three photos showed thick spruce forest. Deciduous dominated habitats occurred where at least three photos showed open deciduous dominated forests with thin undercover. Finally, mixed deciduous dominated habitats occurred where at least three photos showed an equal mixture of spruce and deciduous trees. Although only 1 of the 10 points fell under the category of coniferous, this habitat classification supported the highest average species richness among the three habitat classifications (Figure XX).
 
-```{r eval=TRUE, echo=FALSE, message=FALSE}
+```{r eval=TRUE, echo=FALSE, message=FALSE, include= TRUE}
 library(knitr)
 library(DT)
 library(kableExtra)
@@ -340,6 +417,16 @@ str(erf.rich)
 erf.rich$diversity <-signif(erf.rich$diversity, digits = 3)
 erf.rich
 
+webshot::install_phantomjs()
+library(webshot)
+library(magick)
+library(knitr)
+library(DT)
+library(kableExtra)
+library(tidyverse)
+library(htmltools)
+library(zoo)
+
 #Table: Species Richness
 erf.rich %>%
 kable(format="html",
@@ -355,9 +442,9 @@ kable(format="html",
                 full_width=TRUE, 
                 font_size = 14) %>%
     
-  add_header_above(c(" " = 3, "Survey 1 (May 23)" = 3, "Survey 2 (June 6)" = 3, "Combined Surveys"= 1))
+  add_header_above(c(" " = 3, "Survey 1 (May 23)" = 3, "Survey 2 (June 6)" = 3, "Combined Surveys"= 1)) %>%
 
-as_image(sosc,file="table3.png")
+as_image(erf.rich,file="table3.png", width = 18)
 
 
 #Plot: Ave Species Richness by distance to ERF
@@ -370,7 +457,7 @@ ggplot(data = erf.rich,
   scale_shape_manual(values=c(25, 21, 23))+
         xlab("Distance from ERF") + 
         ylab("Ave. Species Richness")+
-        ggtitle("Figure XX: Point Count Species Richness as a funtion of distance to Eagle River Flats")+
+        ggtitle("Figure 15: Point Count Species Richness as a funtion of distance to Eagle River Flats")+
         theme_minimal()
 
 #Plot: Ave Species Richness by habitat (100m subset)
@@ -391,14 +478,17 @@ ggplot(data = hab.data,
         geom_bar(stat = "identity")+
         xlab("Habitat Classification") + 
         ylab("Ave. Species Richness")+
-        ggtitle("Figure XX: Point Count Species Richness as a function of habitat classification (100m radius")+
+        ggtitle("Figure 16: Point Count Species Richness as a function of habitat classification (100m radius")+
         theme_minimal()
 
 ```
+\par
+
 ## Conclusions
 ###Proposed Next-Steps
 ####Surveys 
 We propose to continue surveys of SOSC on lowland wetland units during 2021. Additional surveys will (1) support long-term DoD management objectives and (2) compliment the Birds and Bogs programs effort to determine differences in distribution, abundance, and habitat affinities of SOSC in Anchorage and on JBER. We recommend the scheduling of at least two survey periods during future years to accurately detect both early and late arriving species. Actual timing of surveys should be adjusted for spring phenology.\par In 2021, we propose to begin monitoring efforts of breeding birds, including Surfbird, in Snowhawk Valley and surrounding alpine ridgelines. An update of the North American Breeding Bird Survey trend results (Sauer et al. 2017; Table 6.1.1.0) for the Northwestern Interior Forest BCR (Bird Conservation Region 4), which encompasses the Anchorage boreal and alpine region, underscores the need to expand monitoring efforts to include non-wetland habitats. For example, wetland-associated SOSC focused on during 2014 - 2020 continue to show long-term declines; however, species associated with montane habitats also show steep, long-term declines.
+
 ####Research 
 Lesser Yellowlegs are one of the steepest declining shorebird species in North America (Sauer et al. 2017). Although the magnitude and number of threats during the annual cycle are likely to be numerous, one known risk is sport and subsistence hunting, which occurs on several Caribbean islands and in northeastern South America. Preliminary GPS tracking data indicate that Lesser Yellowlegs breeding in Anchorage do migrate through or stopover in areas practicing shorebird harvest.\par In 2021, we will continue to coordinate biological sample collection across the species breeding range (including JBER) to map genetically distinct populations. We will then compare samples from hunter-killed birds at non-breeding sites to determine whether breeding populations are disproportionately affected. Additionally, we will continue to expand our knowledge of Lesser Yellowlegs breeding behavior and productivity by monitoring chick growth and vital rates. We do not plan to deploy additional PinPoint Argos GPS on Lesser Yellowlegs at JBER in 2021, but will continue to analyze and organize results for publication. 
 
@@ -420,29 +510,26 @@ data and resighting data.\par
 We thank Zachary Pohlen, Callie Gesmundo, Hannah Vincellete (USFWS-MBM), Katie Christie, Danielle Eneix, Jeff Wagner, Shelby McCahon, Mitch Paisker, Rachel Gingras, and Courtney Brown (ADF&G), who provided assistance with Lesser Yellowlegs field work. Julie Hagelin (ADF&G), Audrey Taylor (UAA), and Lee Tibbitts (USGS-ASC) provided helpful advice on capturing SOSC. We are especially grateful to Cassandra Schoofs and her predecessor Kristy Craig, who have provided invaluable assistance and support that facilitated all aspects of this project. Funding for this project was provided by 673d CES/CEIEC, U.S. Department of Air Force (project numbers FXSB46058 and FXSB46058119); Alaska Department of Fish and Game; Threatened, Endangered, and Diversity Program; and U.S. Fish and Wildlife Service (WSFR-SWG Grants T-32-1, T-33-2020).
 
 ## References
-Andres, B. A. 2005. Breeding bird atlas of Fort Richardson, Alaska. Unpublished report, U. S. Fish and Wildlife Service. Migratory Bird Management, Anchorage, Alaska. 85 pp.
-Boreal Partners in Flight. 2017. In prep. Alaska Landbird Conservation Plan. Anchorage, AK. Browne, B. T. and B. A. Andres. 2002. LCTA breeding bird survey Fort Richardson, Alaska, 1995-1997. Unpublished report, U.S. Fish and Wildlife Service, Anchorage, AK. 12 pp.
-Cowardin, L. M., V. Carter, F. C. Golet, and E. T. LaRoe. 1979. Classification of wetlands and deepwater habitats of the United States. U.S. Fish and Wildlife Service, Biological Services Program (FWS/OBS-79/31), Washington, DC.
-Department of Defense Partners in Flight Program. 2015. Strategic Plan for Bird Conservation and Management on Department of Defense Lands. https://www.denix.osd.mil/nr/priorities/birds/factsheets/dod-pif-mission-sensitive- priority-bird-species-october-2015-legacy-14-1717/
-Handel, C.M., J.R. Sauer. 2017. Combined analysis of roadside and off-road breeding bird survey data to assess population change in Alaska. Condor 119:557-575.
-Hutt, M. B. 1991. Shooting of migrating shorebirds in Barbados. ICBP Technical Publication 12:77-91.
-Jorgenson, M. T., J. E. Roth, M. K. Raynolds, M. D. Smith, W. Lentz, and A. L. Zusi-Cobb.
-1998. An ecological land classification for Fort Wainwright, Alaska. Final report for U.S. Army CRELL, Hanover, NH. Alaska Biological Research, Inc., Fairbanks, AK.
-Matsuoka, S. M., Shaw, D., and Johnson, J. A. 2010a. Estimating the abundance of nesting Rusty Blackbirds in relation to wetland habitats in Alaska. Condor 112:825-833.
-Matsuoka, S. M., D. Shaw, P. H. Sinclair, J. A. Johnson, R. M. Corcoran, N. C. Dau, P. M. Myers, and N. A. Rojek. 2010b. Nesting ecology of the Rusty Blackbird in Alaska and Canada. Condor 112:810-824.
+Andres, B. A. 2005. Breeding bird atlas of Fort Richardson, Alaska. Unpublished report, U. S. Fish and Wildlife Service. Migratory Bird Management, Anchorage, Alaska. 85 pp.  \par
+Boreal Partners in Flight. 2017. In prep. Alaska Landbird Conservation Plan. Anchorage, AK. Browne, B. T. and B. A. Andres. 2002. LCTA breeding bird survey Fort Richardson, Alaska, 1995-1997. Unpublished report, U.S. Fish and Wildlife Service, Anchorage, AK. 12 pp.  \par 
+Cowardin, L. M., V. Carter, F. C. Golet, and E. T. LaRoe. 1979. Classification of wetlands and deepwater habitats of the United States. U.S. Fish and Wildlife Service, Biological Services Program (FWS/OBS-79/31), Washington, DC.  \par Department of Defense Partners in Flight Program. 2015. Strategic Plan for Bird Conservation and Management on Department of Defense Lands. https://www.denix.osd.mil/nr/priorities/birds/factsheets/dod-pif-mission-sensitive- priority-bird-species-october-2015-legacy-14-1717/.  \par 
+Handel, C.M., J.R. Sauer. 2017. Combined analysis of roadside and off-road breeding bird survey data to assess population change in Alaska. Condor 119:557-575.  \par 
+Hutt, M. B. 1991. Shooting of migrating shorebirds in Barbados. ICBP Technical Publication 12:77-91.  \par
+Jorgenson, M. T., J. E. Roth, M. K. Raynolds, M. D. Smith, W. Lentz, and A. L. Zusi-Cobb. 1998. An ecological land classification for Fort Wainwright, Alaska. Final report for U.S. Army CRELL, Hanover, NH. Alaska Biological Research, Inc., Fairbanks, AK.  \par 
+Matsuoka, S. M., Shaw, D., and Johnson, J. A. 2010a. Estimating the abundance of nesting Rusty Blackbirds in relation to wetland habitats in Alaska. Condor 112:825-833.  \par 
+Matsuoka, S. M., D. Shaw, P. H. Sinclair, J. A. Johnson, R. M. Corcoran, N. C. Dau, P. M. Myers, and N. A. Rojek. 2010b. Nesting ecology of the Rusty Blackbird in Alaska and Canada. Condor 112:810-824.  \par 
 MWH Americas, Inc. 2015. Species of special concern 2014 survey report. Prepared for Joint
-Base Elmendorf-Richardson, 673d CES/CEIEC. Unpublished report. 12 pp.
-Rappole, J. H. and Tipton, A. R. 1991. New harness design for attachment of radio transmitters to small passerines. J. Field Orn.62:335-337.
-Rosenberg, K. V., Dokter, A. M., Blancher, P. J., Sauer, J. R., Smith, A. C., Smith, P. A., Stanton, J. C., Panjabi, A., Helft, L., Parr, M., and Marra, P. P. 2019. Decline of North American avifauna. Science 366:120-124.
-Rosenberg, K. V., Kennedy, J. A., Dettmers, R., Ford, R. P., Reynolds, D., Alexander, J. D., Beardmore, C. J., Blancher, P. J., Bogart, R. E., Butcher, G. S., Camfield, A. F., Couturier, A., Demarest, D. W., Easton, W. E., Giocomo, J. J., Keller, R. H., Mini, A. E.,
-Panjabi, A. O., Pashley, D. N., Rich, T. D., Ruth, J. M., Stabins, H., Stanton, J., and Will,
-T. 2016. Partners in Flight Landbird Conservation Plan: 2016 Revision for Canada and Continental United States. Partners in Flight Science Committee. 119 pp.
-Sauer, J. R., D. K. Niven, J. E. Hines, D. J. Ziolkowski, Jr, K. L. Pardieck, J. E. Fallon, and W.
-A. Link. 2017. The North American Breeding Bird Survey, Results and Analysis 1966 - 2015. Version 2.07.2017 USGS Patuxent Wildlife Research Center, Laurel, MD.
+Base Elmendorf-Richardson, 673d CES/CEIEC. Unpublished report. 12 pp.  \par 
+Rappole, J. H. and Tipton, A. R. 1991. New harness design for attachment of radio transmitters to small passerines. J. Field Orn.62:335-337.  \par 
+Rosenberg, K. V., Dokter, A. M., Blancher, P. J., Sauer, J. R., Smith, A. C., Smith, P. A., Stanton, J. C., Panjabi, A., Helft, L., Parr, M., and Marra, P. P. 2019. Decline of North American avifauna. Science 366:120-124.  \par 
+Rosenberg, K. V., Kennedy, J. A., Dettmers, R., Ford, R. P., Reynolds, D., Alexander, J. D., Beardmore, C. J., Blancher, P. J., Bogart, R. E., Butcher, G. S., Camfield, A. F., Couturier, A., Demarest, D. W., Easton, W. E., Giocomo, J. J., Keller, R. H., Mini, A. E., Panjabi, A. O., Pashley, D. N., Rich, T. D., Ruth, J. M., Stabins, H., Stanton, J., and Will,
+T. 2016. Partners in Flight Landbird Conservation Plan: 2016 Revision for Canada and Continental United States. Partners in Flight Science Committee. 119 pp.  \par 
+Sauer, J. R., D. K. Niven, J. E. Hines, D. J. Ziolkowski, Jr, K. L. Pardieck, J. E. Fallon, and W. A. Link. 2017. The North American Breeding Bird Survey, Results and Analysis 1966 - 2015. Version 2.07.2017 USGS Patuxent Wildlife Research Center, Laurel, MD. \par 
 U.S. Fish and Wildlife Service. 2008. Birds of Conservation Concern 2008. United States Department of Interior, Fish and Wildlife Service, Division of Migratory Bird Management, Arlington, Virginia. 85 pp. [Online version available at
-<http://ww.fws.gov/migratorybirds/>]
-U.S. Shorebird Conservation Plan Partnership. 2016. U.S. shorebirds of conservation concern 2016. http://www.shorebirdplan.org/science/assessment-conservation-status-shorebirds/. Assessed September 2017.
-Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limits for shorebirds using the Western Atlantic Flyway. Wader Study 122:37-53.
+<http://ww.fws.gov/migratorybirds/>]  \par 
+U.S. Shorebird Conservation Plan Partnership. 2016. U.S. shorebirds of conservation concern 2016. http://www.shorebirdplan.org/science/assessment-conservation-status-shorebirds/. Assessed September 2017.  \par 
+Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limits for shorebirds using the Western Atlantic Flyway. Wader Study 122:37-53.  \par
+
 
 ## Appendix A: Species List
 
@@ -459,15 +546,20 @@ kable(format="html",
         caption = "Appendix A. Common name, scientific name, and 4-letter species code for all birds present on Joint Base Elmendorf-Richardson") %>%
 
   kable_styling("bordered",
-                full_width=TRUE, 
-                font_size = 14)
+                full_width=FALSE, 
+                font_size = 14,
+                latex_options = c("hold_position", "repeat_header")) %>%
+  
+  as_image(spec,file="appendixA.png", width = 10)
+  
   
 ```
 
 
 ## Appendix B: Status, number of individuals, and relative occurrence of bird species detected during two breeding season survey periods on lowland wetlands on Joint Base Elmendorf-Richardson, 2020.
 
-```{r eval=TRUE, echo=FALSE, message=FALSE}
+```{r eval=TRUE, echo=FALSE, message=FALSE, results='hide'}
+
 results<- read.csv("jber_lowland_survey_2020.csv", header = TRUE)
 
 results.spec = results %>%
@@ -518,12 +610,14 @@ kable(format="html",
                 full_width=TRUE, 
                 font_size = 14) %>%
     
-  add_header_above(c(" " = 2, "Number of Indiv. (On Unit)" = 2, "Number of Pairs (On Unit)" = 2, "Proportion of Units (%)" = 2))
+  add_header_above(c(" " = 2, "Number of Indiv. (On Unit)" = 2, "Number of Pairs (On Unit)" = 2, "Proportion of Units (%)" = 2))%>%
+
+ as_image(results.table,file="appendixB.png", width = 10)
 
 ```
 
 ## Appendix C: Lesser Yellowlegs Project Summary
-The Lesser Yellowlegs is a Neotropical migrant shorebird that breeds across the boreal wetlands of North America from northwestern Alaska to central Quebec. In winter, Lesser Yellowlegs are found in a variety of wetland habitats throughout Central and South America, the Caribbean and the southern United States. Since 1966, the Lesser Yellowlegs population has declined by 5.3% per year across North America (Sauer et al. 2013). In Alaska, the population has declined 5.3% to 9.2% per year since 2003 (Handel and Sauer 2017). On their wintering grounds, Lesser Yellowlegs have incurred an 80% decline since the 1970s (Ottema and Ramcharan 2009). \par The factors contributing to the decline are not well understood, however, wetland conversion, agricultural pollution, climate change, and most prominently, unregulated hunting, are all potential threats. As described by Clay et al. (2012), several Caribbean island shooting clubs have constructed wetlands, also known as, "shooting swamps", to attract shorebirds during fall migration. Shorebird hunting is also prevalent along the northern coast of South America, where tens of thousands of shorebirds, including a high proportion of Lesser Yellowlegs are harvested annually, according to surveys of local hunters (Taylor 2016). The species is considered to be the most widely hunted shorebird species in the Atlantic Flyway with an estimated harvest of nearly 30,000 birds annually on Barbados and Guadeloupe alone (Hutt 1991, Watts et al. 2015, B. Andres, pers. comm.). \par In 2018, USFWS Migratory Bird Management and ADF&G Threatened, Endangered and Diversity Program, collaborated with the goal of expanding the current JBER movement study to include populations across the geographical extent of the Lesser Yellowlegs breeding range. The project included sites in Anchorage, Alaska; Yellowknife, Northwest Territories; and James Bay, Ontario in 2018, and continued expansion in 2019, with the addition of Kanuti National Wildlife Refuge, Alaska; Churchill, Manitoba; and Mingan, Quebec (Figure XXX). The movement data collected by the GPS units will provide conservationists an understanding of the proportion and timing of Lesser Yellowlegs traveling through regions practicing shorebird harvest, and enable the implementation of harvest regulations and site closures for the protection of Lesser Yellowlegs. \par In addition to deploying tracking devises at each site, biological samples, including blood, feathers and claws, were collected from all captured individuals. Blood samples will be used to build a "genoscape"" of the breeding population, examine potential mercury contamination in the body, and genetically sex each individual. A genoscape tests for genetic structure among geographically distinct breeding populations, that is, sequencing DNA to determine if the Alaska breeding populations are genetically distinct from the Canadian population. Additionally, feather and claw samples collected on the breeding grounds will be used to expand the Lesser Yellowlegs isotopic signature library and build upon a previous study focused on linking harvested birds in South America to their breeding origin. 
+The Lesser Yellowlegs is a Neotropical migrant shorebird that breeds across the boreal wetlands of North America from northwestern Alaska to central Quebec. In winter, Lesser Yellowlegs are found in a variety of wetland habitats throughout Central and South America, the Caribbean and the southern United States. Since 1966, the Lesser Yellowlegs population has declined by 5.3% per year across North America (Sauer et al. 2013). In Alaska, the population has declined 5.3% to 9.2% per year since 2003 (Handel and Sauer 2017). On their wintering grounds, Lesser Yellowlegs have incurred an 80% decline since the 1970s (Ottema and Ramcharan 2009). \par The factors contributing to the decline are not well understood, however, wetland conversion, agricultural pollution, climate change, and most prominently, unregulated hunting, are all potential threats. As described by Clay et al. (2012), several Caribbean island shooting clubs have constructed wetlands, also known as, "shooting swamps", to attract shorebirds during fall migration. Shorebird hunting is also prevalent along the northern coast of South America, where tens of thousands of shorebirds, including a high proportion of Lesser Yellowlegs are harvested annually, according to surveys of local hunters (B. Andres, pers. comm.). The species is considered to be the most widely hunted shorebird species in the Atlantic Flyway with an estimated harvest of nearly 30,000 birds annually on Barbados and Guadeloupe alone (Hutt 1991, Watts et al. 2015, B. Andres, pers. comm.). \par In 2018, USFWS Migratory Bird Management and ADF&G Threatened, Endangered and Diversity Program, collaborated with the goal of expanding the current JBER movement study to include populations across the geographical extent of the Lesser Yellowlegs breeding range. The project included sites in Anchorage, Alaska; Yellowknife, Northwest Territories; and James Bay, Ontario in 2018, and continued expansion in 2019, with the addition of Kanuti National Wildlife Refuge, Alaska; Churchill, Manitoba; and Mingan, Quebec (Figure XXX). The movement data collected by the GPS units will provide conservationists an understanding of the proportion and timing of Lesser Yellowlegs traveling through regions practicing shorebird harvest, and enable the implementation of harvest regulations and site closures for the protection of Lesser Yellowlegs. \par In addition to deploying tracking devises at each site, biological samples, including blood, feathers and claws, were collected from all captured individuals. Blood samples will be used to build a "genoscape"" of the breeding population, examine potential mercury contamination in the body, and genetically sex each individual. A genoscape tests for genetic structure among geographically distinct breeding populations, that is, sequencing DNA to determine if the Alaska breeding populations are genetically distinct from the Canadian population. Additionally, feather and claw samples collected on the breeding grounds will be used to expand the Lesser Yellowlegs isotopic signature library and build upon a previous study focused on linking harvested birds in South America to their breeding origin. 
 
 ![Lesser Yellowlegs study sites in 2018 and 2019. PinPoint Argos GPS units were deployed and biological samples were collected at each study site.](./leye_sites.jpg){width=80%}
 
@@ -561,9 +655,11 @@ kable(format="html",
         caption = "Table 4: Summary of all Lesser Yellowlegs adults banded and resighted on Joint Base Elmendorf-Richardson, 2016-2020 .") %>%
 
   kable_styling("bordered",
-                full_width=TRUE, 
-                font_size = 14) 
-    
+                full_width=FALSE, 
+                font_size = 14) %>% 
+
+as_image(band,file="appendixC.png", width = 14)
+
 ```
 
 ###Migratory Connectivity 
@@ -577,4 +673,22 @@ The Lesser Yellowlegs migratory connectivity project consists of 110 adults indi
 
 Preliminary results of autumn migratory movements indicate that birds do not use U.S. military installations as stopover sites along their southbound trajectory (Figure XX). The majority of Lesser Yellowlegs use agricultural fields and ponds during migration, but these types of lands are not present on most active military installations. In 2013, U.S. Department of Agriculture (USDA), DoD and the Department of Interior (DOI) established the "Sentinel Landscapes Partnerships" that promotes the preservation of farms, ranches, forests and open spaces, while allowing the continuation of vital training missions on military installations and surrounding landscapes. Although only seven landscapes in the U.S. have been designated thus far, there is potential for additional designations (sentinellandscapes.org). Protection of landscapes around military installations will certainly benefit Lesser Yellowlegs as this species is shown to stop near military lands across the United States.
 
+\par
+
 ![Fall migratory stopover locations for Lesser Yellowlegs fitted with PinPoint Argos GPS tags. Blue polygons represent U.S. military installations. These were the individuals closest to military installations in 2018-2020.](./mil_map.jpg){width=80%}
+\par
+
+
+## Reference
+
+Clay, R.P., A.J. Lesterhuis, and S. Centron. 2012. Conservation plan for the lesser yellowlegs (Tringa flavipes). Manomet Center for Conservation Sciences, Manomet, MA.   \par
+Handel, C.M., J.R. Sauer. 2017. Combined analysis of roadside and off-road breeding bird survey data to assess population change in Alaska. Condor 119:557-575.  \par 
+Hutt, M. B. 1991. Shooting of migrating shorebirds in Barbados. ICBP Technical Publication 12:77-91.  \par
+Sauer, J. R., D. K. Niven, J. E. Hines, D. J. Ziolkowski, Jr, K. L. Pardieck, J. E. Fallon, and W. A. Link. 2017. The North American Breeding Bird Survey, Results and Analysis 1966 - 2015. Version 2.07.2017 USGS Patuxent Wildlife Research Center, Laurel, MD. \par 
+Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limits for shorebirds using the Western Atlantic Flyway. Wader Study 122:37-53.  \par
+
+
+
+
+
+
