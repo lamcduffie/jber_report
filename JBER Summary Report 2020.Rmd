@@ -131,7 +131,7 @@ Rising from sea level to an elevation over 1,500 m, JBER encompasses a variety o
 
 \par
 
-![Left: Eagle River Flats at sunrise. Tidal mudflats provide forage for shorebird species including Lesser Yellowlegs and Short-billed Dowitcher. Right: Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird. ](./habitat.jpg)
+![Left: Eagle River Flats at sunrise. Tidal mudflats provide forage for shorebird species including Lesser Yellowlegs and Short-billed Dowitcher. Right: Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird. ](./figures/habitat.jpg)
 
 \newpage 
 
@@ -142,7 +142,7 @@ Our sampling universe included freshwater wetlands ~150m in elevation within JBE
 
 \par
 
-![Core boreal wetland survey units selected in 2020. ](./SurveyUnits.jpg){width=95%}
+![Core boreal wetland survey units selected in 2020. ](./figures/SurveyUnits.jpg){width=95%}
 
 \par
 
@@ -153,7 +153,7 @@ During 2020, the USFWS crew conducted avian point count surveys within a propose
 
 \par
 
-![Point count locations within the Eagle River Flats proposed expansion area](./ERFExpansion.jpg){width=60%}
+![Point count locations within the Eagle River Flats proposed expansion area](./figures/ERFExpansion.jpg){width=60%}
 
 \newpage
 
@@ -162,7 +162,7 @@ In 2019 and 2020, the USFWS crew and 673d Civil Engineer Squadron biologist Chri
 
 \par
 
-![ARU locations on Eagle River Flats in 2019 and 2020. Two units were placed in the same location on the eastern edge of Eagle Rier Flats in both years](./ARU_locations.jpg){width=60%}
+![ARU locations on Eagle River Flats in 2019 and 2020. Two units were placed in the same location on the eastern edge of Eagle Rier Flats in both years](./figures/ARU_locations.jpg){width=60%}
 
 \newpage
 
@@ -171,7 +171,7 @@ In 2020, we spent the early portion of the breeding season (May 15- June 1) sear
 
 \par
 
-![Left: Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands. Right: Placemnet of TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./leye_probe.jpg)
+![Left: Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands. Right: Placemnet of TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./figures/leye_probe.jpg)
 
 \newpage
 
@@ -181,7 +181,7 @@ In 2020, we captured and banded Lesser Yellowlegs, Greater Yellowlegs, Solitary 
 \par
 
 
-![Left: Leg bands: Metal, plastic and alphanumeric flags. Right: Measuring the diagonal tarsus of a Lesser Yellowlegs ](./bands.jpg)
+![Left: Leg bands: Metal, plastic and alphanumeric flags. Right: Measuring the diagonal tarsus of a Lesser Yellowlegs ](./figures/bands.jpg)
 \newpage
 
 ### Data Management
@@ -196,7 +196,7 @@ Inside survey unit boundaries, we detected a total of 2,674 individual birds com
 
 \par
 
-![Blackpoll Warbler are a Neotropical migrant that breeding in the boreal forests of Alaska and Canada. This is a late arrive species that was only detected during the second survey period. The male's striking black and white plumage is contrary to the females' monocramatic olive-green plumage](./blpw.jpg){width=60%}
+![Blackpoll Warbler are a Neotropical migrant that breeding in the boreal forests of Alaska and Canada. This is a late arrive species that was only detected during the second survey period. The male's striking black and white plumage is contrary to the females' monocramatic olive-green plumage](./figures/blpw.jpg){width=60%}
 \newpage
 
 #### Species of Special Concern Detections
@@ -213,7 +213,7 @@ library(tidyverse)
 library(htmltools)
 library(zoo)
 
-sosc<- read.csv("SOSC_table.csv", header = TRUE)
+sosc<- read.csv("tables/SOSC_table.csv", header = TRUE)
 
 sosc %>%
 kable(format="html",
@@ -242,7 +242,7 @@ Each SOSC's migration strategy and natural history characteristics clearly expla
 
 \par
 
-![Left: Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands. Right: Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds. ](./survey_habitat.jpg)
+![Left: Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands. Right: Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds. ](./figures/survey_habitat.jpg)
 
 \newpage
 
@@ -260,7 +260,7 @@ library(tidyverse)
 library(htmltools)
 library(zoo)
 
-erf.sp<- read.csv("erfSpecies_table.csv", header = TRUE)
+erf.sp<- read.csv("tables/erfSpecies_table.csv", header = TRUE)
 
 erf.sp %>%
 kable(format="html",
@@ -281,7 +281,7 @@ kable(format="html",
 ### Nest Discoveries
 The USFWS crew successfully found 7 Lesser Yellowlegs, 1 Greater Yellowlegs, and 10 Wilson's Snipe nests on JBER, at various stages of development, ranging from initiation to hatch (Figure 11). Nest success for lesser yellowlegs was exceptionally high in 2020 (85.7%), compared to past years where hatch success was less than 30%. In 2020, nests were monitored with nest cameras and in-nest temperature loggers, which allowed personnel to limit the number of nest checks during the incubation period. The one nest that did fail was likely due to an avian predator, based on the shell fragments found near the nest cup (Figure 13). The single Greater Yellowlegs nest was abandoned due to unknown causes, and the Wilson's snipe nest success is currently being determined by our collaborator at Max Planck Institute.
 
-![A failed Lesser Yellowlegs nest found on the Ammo Country wetlands at Joint Base Elmendorf-Richardson, 2020. The 4mm diameter fissures and egg frangments suggest the nest was depredated by an avian predator.](./amco_egg.jpg){width=80%}
+![A failed Lesser Yellowlegs nest found on the Ammo Country wetlands at Joint Base Elmendorf-Richardson, 2020. The 4mm diameter fissures and egg frangments suggest the nest was depredated by an avian predator.](./figures/amco_egg.jpg){width=80%}
 
 ### Banding, Sampling, and Tracking
 In 2020, we focused our banding efforts on Blackpoll Warbler, Lesser Yellowlegs, Greater Yellowlegs, Solitary Sandpiper, and Short-billed Dowitcher. We captured and banded 11 Blackpoll Warbler, 4 Greater Yellowlegs, 2 Solitary Sandpiper, and 49 Lesser Yellowlegs (29 adults, 20 chicks) on JBER (see Appendix C for full list of banded individuals). We did not capture any Short-billed Dowitcher within the JBER boundary. \par Blackpoll Warbler were captured along Dena'ina Road on Elmendorf. All adults captured were territorial males and banded with a unique color band combination. We hope to resight individuals in future year to determine site fidelity and apparent adult survival. \par Greater Yellowlegs were captured along Fish Lake road and the northern edge of Eagle River Flats. As with the Blackpoll Warbler, we banded all birds with a unique color band combination. Additionally, we deployed two PinPoint Argos GPS tags (Lotek Wireless, Inc., Newmarket, Ontario) on breeding adults. This was the first year tags were attached to the species and we look forward to sharing the results next season. \par We captured and banded a breeding pair of Solitary Sandpiper at Otter Lake South during the brood rearing period. In 2019, the margins of Otter Lake were flooded due to a beaver dam, and this continued into the 2020 breeding season. Foraging and nesting habitat was reduced for many shorebird species, however, a pair of Solitary Sandpiper successfully nested in the surrounding black spruce forest. As with all banded birds, we hope to resight these individuals in future years to determine adult survival. \par Lastly, the USFWS and ADF&G crews individually marked 103 Lesser Yellowlegs at sites on JBER, the Anchorage Coastal Wildlife Refuge and Far North Bicentennial Park. This was the fifth consecutive year of banding Lesser Yellowlegs on JBER, and the third consecutive year we deployed PinPoint Argos GPS on breeding adults. In 2016, we began deploying light-level geolocators on adult Lesser Yellowlegs as a tool to understand how Lesser Yellowlegs migrate, and the susceptibility of Anchorage breeders to unregulated shorebird harvest in South America and the Caribbean. Light-level geolocators are lightweight, >1g, and inexpensive, but exhibit high location error (<200 km latitude and <100 km longitude) and the bird must be recaptured to obtain the data. Lesser Yellowlegs prove difficult to recapture, therefore we transitioned to PinPoint Argos GPS in 2018, which are accurate to 10m and recapture is not required to retrieve data. In addition to tracking adult migration, we also banded 2/3 of adults with unique alpha character leg flags. Our goal is to determine breeding site fidelity, apparent adult survival, and nest success. A full summary of the Lesser Yellowlegs project, including preliminary results is described in appendix B.
@@ -291,8 +291,8 @@ In 2020, we focused our banding efforts on Blackpoll Warbler, Lesser Yellowlegs,
 The understanding of species diversity across boreal wetlands on JBER is critical for managing and conserving bird species and their habitats, while sustaining mission readiness resources for military training purposes. Species Richness Curves, or Species Accumulation Curves are used to estimate the number of species in a particular area. During the JBER wetland surveys, common and widespread species with high detectability were encountered quickly, as reflected in the steep rise in number of species early in the survey effort (Figure 13). As the number of surveys completed increased, the rate at which new species were detected slowed as only uncommon and less detectable species were available for detection. Among all survey units, species richness was lower during the second survey period than the first period (Figure 13). This is likley a function of breeding chronology. Male passerine and shorebird species that were singing and displaying during the first survey period were inconspicuous during the second period as pairs established nests and began incubation. \par The trend in detection rate of species during the first and second survey periods was consistent across years for surveys completed on the 27 nonrandom units (Figure 14). Species richness increased quickly with survey effort during the first period and more slowly during the second period, based on the slope of each curve. Although the overall trend was consistent among years, 2017 experienced the lowest species richness during the first survey period, while 2020 experienced the lowest species richness during the second survey period. These curves do not take into account any differences in observer effort or bird identification skill. Each year of surveys, at least one observer was unique, meaning that they did not survey in any other years. \par 
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
-spacc1.2020<- read.csv("specaccum1_2020.csv", header = TRUE)
-spacc2.2020<- read.csv("specaccum2_2020.csv", header = TRUE)
+spacc1.2020<- read.csv("data/specaccum1_2020.csv", header = TRUE)
+spacc2.2020<- read.csv("data/specaccum2_2020.csv", header = TRUE)
 
 library("vegan")
 
@@ -308,10 +308,10 @@ plot(accurve2, lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lig
 legend(x=20,y=20,c("Survey Period 1","Survey Period 2"),cex=.8,col=c("blue","black"), lty = 1:1, box.lty=0)
 
 ###################Year SAC: Survey period 1 ##############################################
-spacc1.2016<- read.csv("specaccum1_2016.csv", header = TRUE)
-spacc1.2017<- read.csv("specaccum1_2017.csv", header = TRUE)
-spacc1.2019<- read.csv("specaccum1_2019.csv", header = TRUE)
-spacc1.2020<- read.csv("specaccum1_2020.csv", header = TRUE)
+spacc1.2016<- read.csv("data/specaccum1_2016.csv", header = TRUE)
+spacc1.2017<- read.csv("data/specaccum1_2017.csv", header = TRUE)
+spacc1.2019<- read.csv("data/specaccum1_2019.csv", header = TRUE)
+spacc1.2020<- read.csv("data/specaccum1_2020.csv", header = TRUE)
 
 accurve1<-specaccum(spacc1.2016, method="collector", permutations=100)
 accurve2<-specaccum(spacc1.2017, method="collector", permutations=100)
@@ -329,10 +329,10 @@ legend(x=20,y=20,c("2016","2017","2019","2020"),cex=.8,col=c("black","green", "b
 
 
 ###################Year SAC: Survey period 2 ##############################################
-spacc2.2016<- read.csv("specaccum2_2016.csv", header = TRUE)
-spacc2.2017<- read.csv("specaccum2_2017.csv", header = TRUE)
-spacc2.2019<- read.csv("specaccum2_2019.csv", header = TRUE)
-spacc2.2020<- read.csv("specaccum2_2020.csv", header = TRUE)
+spacc2.2016<- read.csv("data/specaccum2_2016.csv", header = TRUE)
+spacc2.2017<- read.csv("data/specaccum2_2017.csv", header = TRUE)
+spacc2.2019<- read.csv("data/specaccum2_2019.csv", header = TRUE)
+spacc2.2020<- read.csv("data/specaccum2_2020.csv", header = TRUE)
 
 accurve1<-specaccum(spacc2.2016, method="collector", permutations=100)
 accurve2<-specaccum(spacc2.2017, method="collector", permutations=100)
@@ -356,8 +356,8 @@ Species Richness Curves are valuable for examining actual detection trends, howe
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
 
 ##### Rarefaction curve ###########################################################
-rare1<- read.csv("rarefaction1_2020.csv", header = TRUE)
-rare2<- read.csv("rarefaction2_2020.csv", header = TRUE)
+rare1<- read.csv("data/rarefaction1_2020.csv", header = TRUE)
+rare2<- read.csv("data/rarefaction2_2020.csv", header = TRUE)
 
 plot(specaccum(rare1, method = "rarefaction"), 
      xvar = "individuals", lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.col="lightblue",  xlab = "Number of Individuals", ylab="Species Richness", main= "Figure 13: Rerfaction Curves 2020")
@@ -370,7 +370,7 @@ legend(x=1200,y=10,c("Survey 1", "Survey 2"),cex=.8,col=c("blue","black"), lty =
 With the completion of boreal breeding bird surveys in 2020, we have four years of data representing the same 27 nonrandom units. By comparing within year trends of raw individual observations, we determined that detections for all species groups except for loon and grebe, decreased from 2016 to 2017, but increased gradually from 2017 to 2020 (Figure XX). However, it is important to note that surveys were not completed in 2018. \par Passerines were the most dominate species group across all survey years, followed by shorebirds and waterfowl. The habitat mosaics at each survey unit clearly determine species presence and absence. For example, large waterbodies within survey units were eliminated from all survey units because SOSC do not nest on the water. Many waterfowl species were on waterbodies (off unit) when detected and therefore, were not included in the final survey model. 
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
-taxon<- read.csv("yeartrend_taxon.csv", header = TRUE)
+taxon<- read.csv("data/yeartrend_taxon.csv", header = TRUE)
 
 library(ggplot2)
 library(dplyr)
@@ -404,9 +404,9 @@ library(plyr)
 library(vegan)
 library(ggplot2)
 
-erf.rich<- read.csv("spec.rich.csv", header = TRUE)
+erf.rich<- read.csv("data/spec.rich.csv", header = TRUE)
 
-diverse1<- read.csv("erfdiv_2020.csv", header = TRUE)
+diverse1<- read.csv("data/erfdiv_2020.csv", header = TRUE)
 diverse1$point <- c(1,2,3,4,5,6,7,8,9,10)
 
 ddply(diverse1,~point,function(x) {
@@ -535,7 +535,7 @@ Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limit
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
 
-spec<- read.csv("species_table.csv", header = TRUE)
+spec<- read.csv("tables/species_table.csv", header = TRUE)
 
 #Table: Species Richness
 spec %>%
@@ -560,7 +560,7 @@ kable(format="html",
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE, results='hide'}
 
-results<- read.csv("jber_lowland_survey_2020.csv", header = TRUE)
+results<- read.csv("data/jber_lowland_survey_2020.csv", header = TRUE)
 
 results.spec = results %>%
   #grab survey num, Species, and Num 
@@ -592,10 +592,10 @@ results.unit = results %>%
   sub.unit2 <- subset(sub.unit2, Indiv_on != 0 )
   count(sub.unit2$Species)
   
-spec<- read.csv("species_table.csv", header = TRUE)
+spec<- read.csv("tables/species_table.csv", header = TRUE)
 
 #Table: Species Presence Results
-results.table<- read.csv("results_table.csv", header = TRUE)
+results.table<- read.csv("tables/results_table.csv", header = TRUE)
 
 results.table %>%
 kable(format="html",
@@ -619,19 +619,19 @@ kable(format="html",
 ## Appendix C: Lesser Yellowlegs Project Summary
 The Lesser Yellowlegs is a Neotropical migrant shorebird that breeds across the boreal wetlands of North America from northwestern Alaska to central Quebec. In winter, Lesser Yellowlegs are found in a variety of wetland habitats throughout Central and South America, the Caribbean and the southern United States. Since 1966, the Lesser Yellowlegs population has declined by 5.3% per year across North America (Sauer et al. 2013). In Alaska, the population has declined 5.3% to 9.2% per year since 2003 (Handel and Sauer 2017). On their wintering grounds, Lesser Yellowlegs have incurred an 80% decline since the 1970s (Ottema and Ramcharan 2009). \par The factors contributing to the decline are not well understood, however, wetland conversion, agricultural pollution, climate change, and most prominently, unregulated hunting, are all potential threats. As described by Clay et al. (2012), several Caribbean island shooting clubs have constructed wetlands, also known as, "shooting swamps", to attract shorebirds during fall migration. Shorebird hunting is also prevalent along the northern coast of South America, where tens of thousands of shorebirds, including a high proportion of Lesser Yellowlegs are harvested annually, according to surveys of local hunters (B. Andres, pers. comm.). The species is considered to be the most widely hunted shorebird species in the Atlantic Flyway with an estimated harvest of nearly 30,000 birds annually on Barbados and Guadeloupe alone (Hutt 1991, Watts et al. 2015, B. Andres, pers. comm.). \par In 2018, USFWS Migratory Bird Management and ADF&G Threatened, Endangered and Diversity Program, collaborated with the goal of expanding the current JBER movement study to include populations across the geographical extent of the Lesser Yellowlegs breeding range. The project included sites in Anchorage, Alaska; Yellowknife, Northwest Territories; and James Bay, Ontario in 2018, and continued expansion in 2019, with the addition of Kanuti National Wildlife Refuge, Alaska; Churchill, Manitoba; and Mingan, Quebec (Figure XXX). The movement data collected by the GPS units will provide conservationists an understanding of the proportion and timing of Lesser Yellowlegs traveling through regions practicing shorebird harvest, and enable the implementation of harvest regulations and site closures for the protection of Lesser Yellowlegs. \par In addition to deploying tracking devises at each site, biological samples, including blood, feathers and claws, were collected from all captured individuals. Blood samples will be used to build a "genoscape"" of the breeding population, examine potential mercury contamination in the body, and genetically sex each individual. A genoscape tests for genetic structure among geographically distinct breeding populations, that is, sequencing DNA to determine if the Alaska breeding populations are genetically distinct from the Canadian population. Additionally, feather and claw samples collected on the breeding grounds will be used to expand the Lesser Yellowlegs isotopic signature library and build upon a previous study focused on linking harvested birds in South America to their breeding origin. 
 
-![Lesser Yellowlegs study sites in 2018 and 2019. PinPoint Argos GPS units were deployed and biological samples were collected at each study site.](./leye_sites.jpg){width=80%}
+![Lesser Yellowlegs study sites in 2018 and 2019. PinPoint Argos GPS units were deployed and biological samples were collected at each study site.](./figures/leye_sites.jpg){width=80%}
 
 ### Lesser Yellowlegs in Anchorage 
 In 2020, We captured brood-rearing and foraging adult Lesser Yellowlegs from 2 - 21 June. We tagged 12 adults with the sole focus of understanding local movements on JBER, and annual migratory movement patterns including primary stopover and nonbreeding locations. Results from the local movement analysis indicate that Eagle River Flats (ERF) is essential for adult and brood foraging. For example, the majority of adult Lesser Yellowlegs tagged on JBER in 2018, 2019, and 2020 either moved their broods to Eagle River Flats 1 day after hatch, or used the flats as a staging area before autumn migration (Figure XXX). Additionally, one adult banded in 2018 and one in 2019 on the Anchorage Coastal Wildlife Refuge, used ERF and Otter Lake as a staging area prior to migration. Staging adults are typically observed foraging on ERF in late June through early August.
 
-![GPS locations of Lesser Yellowlegs on Joint Base Elmendorf-Richardson by year (top) and individual (bottom).](./leye_erflocs.jpg){width=80%}
+![GPS locations of Lesser Yellowlegs on Joint Base Elmendorf-Richardson by year (top) and individual (bottom).](./figures/leye_erflocs.jpg){width=80%}
 
 Each PinPoint Argos GPS tag deployed was equipped with a user-defined data collection schedule. The project goals and objectives dictated how tags were programmed. Migration tags were set to collect autumn and spring locations more frequently then winter locations, while local movement tags were programmed to frequently collect locations prior to autumn migration. We were successful in collecting data in 2018 and 2019 to meet the project objectives; therefore, in 2020, we progrmed tags to collect locations less frequently during migration and more frequently during winter to help fill knowledge gaps. Additionally, in 2019 we recaptured two Lesser Yellowlegs carrying PinPoint Argos GPS tags from 2018. We removed and replaced the GPS tag on both individuals. Our goal is to identify potential variation in migration routes between years for a single individual.
 
 ###Annual Survival Estimates 
 Since 2016, 182 adult Lesser Yellowlegs were banded in Anchorage, of which, 92 were banded on JBER (Figure XX). Each year crews conduct resighting surveys with the goal of estimating annual adult survival. In 2020, a crew of 12 biologists from USFWS and ADF&G resighted 25 previously banded birds between May and July for a total effort of 456 hours and 18 minutes (Table XX). \par Although effort was similar to previous years, fewer birds were resighted at Otter Lake in 2020 and 2019 than any other year. This is likely due to suboptimal foraging and nesting conditions corresponding to increased beaver activity at the lake. Resighting records between years provide vital information on annual survival rates; however, if this normally site-faithful species breeds elsewhere due to a change in environmental conditions, survival rate estimates will be skewed. This was clearly the case for the Lesser Yellowlegs with flag code "AE". This bird was banded at Otter Lake North in 2016 and was observed nesting at Otter Lake in 2017 and 2018. In 2019 and 2020, the bird was not resighted at Otter Lake; however, while deploying ARU units on the edge of Eagle River Flats in 2020, "AE"" was observed foraging in the tidal ponds. This resighting confirmed that Lesser Yellowlegs can live longer than the expected 4 years. Further, a Lesser Yellowlegs banded as an adult on the Anchorage Coastal Wildlife Refuge in 2013, was observed in 2020.
 
-![Lesser Yellowlegs banded with alphanumeric flag "TY" on Joint Base Elmendorf-Richardson, 2020.](./leye_flag.jpg){width=80%}
+![Lesser Yellowlegs banded with alphanumeric flag "TY" on Joint Base Elmendorf-Richardson, 2020.](./figures/leye_flag.jpg){width=80%}
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
 library(knitr)
@@ -644,7 +644,7 @@ library(plyr)
 library(vegan)
 library(ggplot2)
 
-band<- read.csv("band_table.csv", header = TRUE)
+band<- read.csv("tables/band_table.csv", header = TRUE)
 
 #Table: Lesser Yellowlegs banding and recapture table
 band %>%
@@ -665,17 +665,17 @@ as_image(band,file="appendixC.png", width = 14)
 ###Migratory Connectivity 
 The Lesser Yellowlegs migratory connectivity project consists of 110 adults individually marked with PinPoint Argos GPS (Figure XX). The GPS tags were distributed among the study sites in Alaska and Canada (Figure XX). During 2018 and 2019, several tags failed due to potential predation events, battery failure, or tag communication failure. A summary of Lesser Yellowlegs movements across years will be published as part of a Masters thesis and independent publications.
 
-![A Lesser Yellowlegs carrying a PinPoint Argos GPS tag on lle Niapiskau (Mingan Archipeligo), Quebec, 2020. Photo: Y. Rochepault.](./LEYE_Mingan.jpg){width=80%}
+![A Lesser Yellowlegs carrying a PinPoint Argos GPS tag on lle Niapiskau (Mingan Archipeligo), Quebec, 2020. Photo: Y. Rochepault.](./figures/LEYE_Mingan.jpg){width=80%}
 
 \par Preliminary results indicate that Lesser Yellowlegs exhibit moderate migratory connectivity between breeding sites and nonbreeding sites. Birds that breed at the same site spend the nonbreeding period in similar locations, but do not tightly cluster. During autumn migration in 2018 and 2019, birds from the same breeding cohort followed similar migration routes and spent the non-breeding period in similar locations (Figure XX). Additionally, birds from different breeding sites are shown to intermingle at stopover locations during autumn and spring migration, as well as at non-breeding sites. Preliminary results indicate that birds breeding in Alaska migrate using the Central Flyway during autumn migration, and overwinter further south than birds breeding across Canada. Central Canada breeding birds use the Central Flyway to reach stopover areas in Alberta, Saskatchewan, and North Dakota before switching to the Atlantic Flyway, while eastern Canada breeders use the Atlantic Flyway throughout migration. Not all birds breeding in the same location follow the same migratory paths. This is likely due to variation in gender, departure date, food resources, weather patterns, and individual preference.
 
-![Migratory track lines for Lesser Yellowlegs tagged with Lotek PinPoint GPS Argos Satellite tags, 2018-2020.](./leye_map.jpg){width=80%}
+![Migratory track lines for Lesser Yellowlegs tagged with Lotek PinPoint GPS Argos Satellite tags, 2018-2020.](./figures/leye_map.jpg){width=80%}
 
 Preliminary results of autumn migratory movements indicate that birds do not use U.S. military installations as stopover sites along their southbound trajectory (Figure XX). The majority of Lesser Yellowlegs use agricultural fields and ponds during migration, but these types of lands are not present on most active military installations. In 2013, U.S. Department of Agriculture (USDA), DoD and the Department of Interior (DOI) established the "Sentinel Landscapes Partnerships" that promotes the preservation of farms, ranches, forests and open spaces, while allowing the continuation of vital training missions on military installations and surrounding landscapes. Although only seven landscapes in the U.S. have been designated thus far, there is potential for additional designations (sentinellandscapes.org). Protection of landscapes around military installations will certainly benefit Lesser Yellowlegs as this species is shown to stop near military lands across the United States.
 
 \par
 
-![Fall migratory stopover locations for Lesser Yellowlegs fitted with PinPoint Argos GPS tags. Blue polygons represent U.S. military installations. These were the individuals closest to military installations in 2018-2020.](./mil_map.jpg){width=80%}
+![Fall migratory stopover locations for Lesser Yellowlegs fitted with PinPoint Argos GPS tags. Blue polygons represent U.S. military installations. These were the individuals closest to military installations in 2018-2020.](./figures/mil_map.jpg){width=80%}
 \par
 
 
