@@ -1,0 +1,133 @@
+,Common Name,Scientific Name,Species Code
+Waterfowl,,,
+,Snow Goose,<I>Anser caerulescens <I>,SNGO
+,Greater White-fronted Goose,<em>Anser albifrons<em>,GWFG
+,Canada Goose,<em>Branta canadensis<em>,CANG
+,Trumpeter Swan,<em>Cygnus buccinator<em>,TRUS
+,Blue-winged Teal,<em>Spatula discors<em>,BWTE
+,Northern Shoveler,<em>Spatula clypeata<em>,NOSH
+,Gadwall,<em>Mareca strepera<em>,GADW
+,American Wigeon,<em>Mareca americana<em>,AMWI
+,Mallard,<em>Anas platyrhynchos<em>,MALL
+,Northern Pintail,<em>Anas acuta<em>,NOPI
+,Green-winged Teal,<em>Anas crecca<em>,GWTE
+,Canvasback,<em>Aythya valisineria<em>,CANV
+,Redhead,<em>Aythya americana<em>,REDH
+,Ring-necked Duck,<em>Aythya collaris<em>,RNDU
+,Greater Scaup,<em>Aythya marila<em>,GRSC
+,Lesser Scaup,<em>Aythya affinis<em>,LESC
+,Harlequin Duck,<em>Histrionicus histrionicus<em>,HADU
+,Surf Scoter,<em>Melanitta perspicillata<em>,SUSC
+,Bufflehead,<em>Bucephala albeola<em>,BUFF
+,Common Goldeneye,<em>Bucephala clangula<em>,COGO
+,Barrow's Goldeneye,<em>Bucephala islandica<em>,BAGO
+,Common Merganser,<em>Mergus merganser<em>,COME
+Grouse & Ptarmigan,,,
+,Spruce Grouse,<em>Falcipennis canadensis<em>,SPGR
+Grebes,,,
+,Horned Grebe,<em>Podiceps auritus<em>,HOGR
+,Red-necked Grebe,<em>Podiceps grisegena<em>,RNGR
+Cranes,,,
+,Sandhill Crane,<em>Antigone canadensis<em>,SACR
+Plovers,,,
+,Black-bellied Plover,<em>Pluvialis squatarola<em>,BBPL
+,American Golden-Plover,<em>Pluvialis dominica<em>,AMGP
+,Pacific Golden-Plover,<em>Pluvialis fulva<em>,PAGP
+,Semipalmated Plover,<em>Charadrius semipalmatus<em>,SEPL
+,Killdeer,<em>Charadrius vociferus<em>,KILL
+Sandpipers,,,
+,Whimbrel,<em>Numenius phaeopus<em>,WHIM
+,Hudsonian Godwit,<em>Limosa haemastica<em>,HUGO
+,Surfbird,<em>Calidris virgata<em>,SURF
+,Least Sandpiper,<em>Calidris minutilla<em>,LESA
+,Pectoral Sandpiper,<em>Calidris melanotos<em>,PESA
+,Short-billed Dowitcher,<em>Limnodromus griseus<em>,SBDO
+,Long-billed Dowitcher,<em>Limnodromus scolopaceus<em>,LBDO
+,Wilson's Snipe,<em>Gallinago delicata<em>,WISN
+,Red-necked Phalarope,<em>Phalaropus lobatus<em>,RNPH
+,Spotted Sandpiper,<em>Actitis macularius<em>,SPSA
+,Solitary Sandpiper,<em>Tringa solitaria<em>,SOSA
+,Wandering Tattler,<em>Tringa incana<em>,WATA
+,Greater Yellowlegs,<em>Tringa melanoleuca<em>,GRYE
+,Lesser Yellowlegs,<em>Tringa flavipes<em>,LEYE
+Gulls & Terns,,,
+,Bonaparte's Gull,<em>Chroicocephalus philadelphia<em>,BOGU
+,Mew Gull,<em>Larus canus<em>,MEGU
+,Herring/Glaucous-winged Gull Hybrid,<em>Larus argentatus/Larus glaucescens<em>,Hybrid
+,Arctic Tern,<em>Sterna paradisaea<em>,ARTE
+Loons,,,
+,Red-throated Loon,<em>Gavia stellata<em>,RTLO
+,Pacific Loon,<em>Gavia pacifica<em>,PALO
+,Common Loon,<em>Gavia immer<em>,COLO
+Osprey,,,
+,Osprey,<em>Pandion haliaetus<em>,OSPR
+Hawks & Eagles,,,
+,Golden Eagle,<em>Aquila chrysaetos<em>,GOEA
+,Northern Harrier,<em>Circus hudsonius<em>,NOHA
+,Sharp-shinned Hawk,<em>Accipiter striatus<em>,SSHA
+,Northern Goshawk,<em>Accipiter gentilis<em>,NOGO
+,Bald Eagle,<em>Haliaeetus leucocephalus<em>,BAEA
+,Red-tailed Hawk,<em>Buteo jamaicensis<em>,RTHA
+Owls,,,
+,Great Horned Owl,<em>Bubo virginianus<em>,GHOW
+,Great Gray Owl,<em>Strix nebulosa<em>,GGOW
+,Boreal Owl,<em>Aegolius funereus<em>,BOOW
+,Northern Saw-whet Owl,<em>Aegolius acadicus<em>,NSWO
+Kingfishers,,,
+,Belted Kingfisher,<em>Megaceryle alcyon<em>,BEKI
+Woodpeckers,,,
+,American Three-toed Woodpecker,<em>Picoides dorsalis<em>,ATTW
+,Black-backed Woodpecker,<em>Picoides arcticus<em>,BBWO
+,Downy Woodpecker,<em>Dryobates pubescens<em>,DOWO
+,Hairy Woodpecker,<em>Dryobates villosus<em>,HAWO
+,Northern Flicker,<em>Colaptes auratus<em>,NOFL
+Falcons,,,
+,Merlin,<em>Falco columbarius<em>,MERL
+Passerines,,,
+,Olive-sided Flycatcher,<em>Contopus cooperi<em>,OSFL
+,Western Wood-Pewee,<em>Contopus sordidulus<em>,WEWP
+,Alder Flycatcher,<em>Empidonax alnorum<em>,ALFL
+,Northern Shrike,<em>Lanius borealis<em>,NSHR
+,Canada Jay,<em>Perisoreus canadensis<em>,CAJA
+,Steller's Jay,<em>Cyanocitta stelleri<em>,STJA
+,Black-billed Magpie,<em>Pica hudsonia<em>,BBMA
+,Common Raven,<em>Corvus corax<em>,CORA
+,Black-capped Chickadee,<em>Poecile atricapillus<em>,BCCH
+,Boreal Chickadee,<em>Poecile hudsonicus<em>,BOCH
+,Horned Lark,<em>Eremophila alpestris<em>,HOLA
+,Tree Swallow,<em>Tachycineta bicolor<em>,TRES
+,Violet-green Swallow,<em>Tachycineta thalassina<em>,VGSW
+,Bank Swallow,<em>Riparia riparia<em>,BANS
+,Golden-crowned Kinglet,<em>Regulus satrapa<em>,GCKI
+,Ruby-crowned Kinglet,<em>Regulus calendula<em>,RCKI
+,Red-breasted Nuthatch,<em>Sitta canadensis<em>,RBNU
+,Brown Creeper,<em>Certhia americana<em>,BRCR
+,American Dipper,<em>Cinclus mexicanus<em>,AMDI
+,European Starling,<em>Sturnus vulgaris<em>,EUST
+,Townsend's Solitaire,<em>Myadestes townsendi<em>,TOSO
+,Varied Thrush,<em>Ixoreus naevius<em>,VATH
+,Gray-cheeked Thrush,<em>Catharus minimus<em>,GCTH
+,Swainson's Thrush,<em>Catharus ustulatus<em>,SWTH
+,Hermit Thrush,<em>Catharus guttatus<em>,HETH
+,American Robin,<em>Turdus migratorius<em>,AMRO
+,Bohemian Waxwing,<em>Bombycilla garrulus<em>,BOWA
+,American Pipit,<em>Anthus rubescens<em>,AMPI
+,Pine Grosbeak,<em>Pinicola enucleator<em>,PIGR
+,Common Redpoll,<em>Acanthis flammea<em>,CORE
+,White-winged Crossbill,<em>Loxia leucoptera<em>,WWCR
+,Pine Siskin,<em>Spinus pinus<em>,PISI
+,Fox Sparrow,<em>Passerella iliaca<em>,FOSP
+,Dark-eyed Junco,<em>Junco hyemalis<em>,DEJU
+,White-crowned Sparrow,<em>Zonotrichia leucophrys<em>,WCSP
+,Golden-crowned Sparrow,<em>Zonotrichia atricapilla<em>,GCSP
+,Savannah Sparrow,<em>Passerculus sandwichensis<em>,SAVS
+,Lincoln's  Sparrow,<em>Melospiza lincolnii<em>,LISP
+,Rusty Blackbird,<em>Euphagus carolinus<em>,RUBL
+,Northern Waterthrush,<em>Parkesia noveboracensis<em>,NOWA
+,Orange-crowned Warbler,<em>Leiothlypis celata<em>,OCWA
+,Common Yellowthroat,<em>Geothlypis trichas<em>,COYE
+,Yellow Warbler,<em>Setophaga petechia<em>,YEWA
+,Blackpoll Warbler,<em>Setophaga striata<em>,BLPW
+,Yellow-rumped Warbler,<em>Setophaga coronata<em>,YRWA
+,Townsend's Warbler,<em>Setophaga townsendi<em>,TOWA
+,Wilson's Warbler,<em>Cardellina pusilla<em>,WIWA
