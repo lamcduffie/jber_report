@@ -6,4 +6,4 @@ What I need help with:
 3. Include plots to "figures" in table of contents.
 4. Eliminate blank spaces in pdf output.
 5. Exclude the dataframe output. Issues begin near line 395. 
-6. Increase size of long tables and make them span multiple pages.
+6. Increase size of long tables and make them span multiple pages. Issue starts in appendicies.
