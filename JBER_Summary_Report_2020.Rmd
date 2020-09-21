@@ -1,19 +1,22 @@
 ---
-title: "ABUNDANCE, HABITAT ASSOCIATIONS, AND MIGRATORY CONNECTIVITY OF BIRD SPECIES OF SPECIAL CONCERN ON JOINT BASE ELMENDORF-RICHARDSON, ALASKA"
-subtitle: "2020 SUMMARY REPORT"
+title: ABUNDANCE, HABITAT ASSOCIATIONS, AND MIGRATORY CONNECTIVITY OF BIRD SPECIES
+  OF SPECIAL CONCERN ON JOINT BASE ELMENDORF-RICHARDSON, ALASKA
 author:
-- "Submitted to:  \n Cassandra Schoofs  \n Biological Scientist (Environmental)  \n USAF PACAF 673d CES/CEIEC  \n Joint Base Elmendorf-Richardson, AK"  
-- "Prepared by:  \n Laura McDuffie  \n U.S. Fish and Wildlife Service, \n Migratory Bird Management  \n 1011 East Tudor Road, MS 201,  \n Anchorage, Alaska 99503  \n laura_mcduffie@fws.gov"
-
-output:
-   pdf_document:
-      fig_caption: true
-      number_sections: true
-      df_print: kable
+  USAF PACAF 673d CES/CEIEC  \n Joint Base Elmendorf-Richardson, AK"
+  Bird Management  \n 1011 East Tudor Road, MS 201,  \n Anchorage, Alaska 99503  \n
+  laura_mcduffie@fws.gov"
+- "Submitted to:  \n Cassandra Schoofs  \n Biological Scientist (Environmental)  \n
+- "Prepared by:  \n Laura McDuffie  \n U.S. Fish and Wildlife Service, \n Migratory
 fontsize: 12pt
+output:
+  pdf_document:
+    df_print: kable
+    fig_caption: yes
+    number_sections: yes
+  word_document: default
 geometry: margin=1in
-always_allow_html: TRUE
-
+subtitle: 2020 SUMMARY REPORT
+always_allow_html: yes
 ---
 \newpage
 \tableofcontents
@@ -148,7 +151,7 @@ Rising from sea level to an elevation over 1,500 m, JBER encompasses a variety o
 
 \par
 
-![Left: Eagle River Flats at sunrise. Tidal mudflats provide forage for shorebird species including Lesser Yellowlegs and Short-billed Dowitcher. Right: Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird. ](./figures/survey_habitat.jpg){width=80%}
+![Left: Eagle River Flats at sunrise. Tidal mudflats provide forage for shorebird species including Lesser Yellowlegs and Short-billed Dowitcher. Right: Alpine habitat comprises about 20% of Joint Base Elmendorf-Richardson. Snowhawk Valley is a critical nesting habitat for many alpine obligate species including American Pipit, Northern Wheatear, and Surfbird. ](./figures/habitat.jpg){width=80%}
 
 \newpage 
 
@@ -170,7 +173,7 @@ During 2020, the USFWS crew conducted avian point count surveys within a propose
 
 \par
 
-![Point count locations within the Eagle River Flats proposed expansion area](./figures/ERFExpansion.jpg){width=80%}
+![Point count locations within the proposed expansion area of Eagle River Flats](./figures/ERFExpansion.jpg){width=80%}
 
 \newpage
 
@@ -188,7 +191,7 @@ In 2020, we spent the early portion of the breeding season (May 15- June 1) sear
 
 \par
 
-![Left: Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands. Right: Placemnet of TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./figures/leye_probe.jpg){width=80%}
+![Left: Recently hatched Lesser Yellowlegs chicks in nest bowl at Ammo Country wetlands. Right: Placement of a TinyTag data logger probe in the center of a Lesser Yellowlegs nest ](./figures/leye_probe.jpg){width=80%}
 
 \newpage
 
@@ -197,7 +200,7 @@ In 2020, we captured and banded Lesser Yellowlegs, Greater Yellowlegs, Solitary 
 
 \par
 
-![Left: Leg bands: Metal, plastic and alphanumeric flags. Right: Measuring the diagonal tarsus of a Lesser Yellowlegs ](./figures/bands.jpg){width=80%}
+![Left: Leg bands: Metal, plastic and alphanumeric flags. Right: Measuring the diagonal tarsus of a Lesser Yellowlegs](./figures/bands.jpg){width=80%}
 \newpage
 
 ### Data Management
@@ -218,7 +221,7 @@ Inside survey unit boundaries, we detected a total of 2,674 individual birds com
 We recorded all five SOSC during the two survey periods. Lesser Yellowlegs were the most numerous and widespread SOSC species across JBER wetlands (Table 1). Overall, the number of SOSC individuals was less than in previous years, which we attribute to fewer units surveyed and a lack of nesting and foraging habitat at Otter Lake due to flooding by beaver dams (Figure 11). Lesser Yellowlegs were the most frequently detected SOSC species (63 total individuals) during both surveys, while Solitary Sandpipers, Olive-sided Flycatchers and Rusty Blackbirds were less abundant (18, 28 and 47 individuals, respectively). All SOSC occurred in similar numbers during survey periods, except for the Blackpoll Warbler, a Neotropical migrant, which we only detected during the second survey (2 individuals within unit boundaries).
 
 
-\begin{table}[h]
+\begin{table}[]
 
 \caption[Summary of Species of Special Concern detected on unit during two survey periods on Joint Base Elmendorf-Richardson, 2020.]{Summary of Species of Special Concern detected on unit during two survey periods on Joint Base Elmendorf-Richardson, 2020.}
 
@@ -244,7 +247,7 @@ kable(format="html",
     
   add_header_above(c(" " = 1, "Survey 1 (May 15-17)" = 3, "Survey 2 (May 29-31)" = 3)) %>%
 
-  as_image(sosc,file="table1.png", width = 4)
+  as_image(table1,file="table1.png", width = 4)
 
 ```
 
@@ -261,7 +264,7 @@ Each SOSC's migration strategy and natural history characteristics clearly expla
 
 \par
 
-![Left: Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands. Right: Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds. ](./figures/survey_habitat.jpg){width=80%}
+![Left: Blackpoll Warbler and Rusty Blackbird nest within mixed forests along the edges of wetlands. Right: Sandpiper species forage in the emergent vegetation along the edges of lakes and ponds.](./figures/survey_habitat.jpg){width=80%}
 
 \newpage
 
@@ -269,12 +272,12 @@ Each SOSC's migration strategy and natural history characteristics clearly expla
 In 2020, point count surveys were completed in the designated Eagle River Flats expansion area. The 10-point count locations were divided among four personnel and were completed between 6:00 and 9:00 on May 23 and June 6. We recorded 309 individuals comprised of 28 species across both survey periods.  \par Detection rates were high for most species groups except for raptors (hawks, owls, and falcons) and loons and grebes, which were detected at 0% and 20% of points, respectively. Passerines were the most commonly detected species group and recorded at 100% of survey points. Swainson's Thrush were detected at all point count locations, followed by Yellow-rumped Warbler (Myrtle), American Robin and Ruby-crowned Kinglet (90% of points). Additionally, Sandhill Crane were detected at all point count locations, however this species was always recorded beyond 100 m. Wilson's Snipe, Red-necked Grebe, Common Loon, Green-winged Teal, American Wigeon, Western Wood-Pewee, Tree Swallow, Hairy Woodpecker, Golden-crowned Kinglet, Canada Jay, Boreal Chickadee, Black-capped Chickadee, and Alder Flycatcher were detected at only one point count location. These results only reflect species detected during point counts, and do not include species detected between points. \par In addition to avian species, we collected information on mammals observed between point count locations. During the survey on 23 May, a pack of Grey Wolves was observed between survey points 1 and 3. On this same day, a moose with fresh wounds was observed standing in shallow water on the edge of Eagle River Flats ~155 m from survey point 1. When we returned to the location of the moose on 20 June, a moose carcass and wolf scat were present.
 
 
-\begin{table}[h]
+\begin{table}[]
 
 \caption[Avian species detected on the proposed expansion area of Eagle River Flats during two point counts periods, 2020.]{Avian species detected on the proposed expansion area of Eagle River Flats during two point counts periods, 2020.}
 
 
-```{r table2, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
+```{r table2, out.width="80%", eval=TRUE, echo=FALSE, message=FALSE}
 
 erf.sp<- read.csv("tables/erfSpecies_table.csv", header = TRUE)
 
@@ -290,7 +293,7 @@ kable(format="html",
                 full_width=FALSE, 
                 font_size = 14) %>%
 
-  as_image(erf.sp,file="table2.png", width = 4)
+  as_image(table2,file="table2.png", width = 4)
     
 ```
 
@@ -314,13 +317,13 @@ In 2020, we focused our banding efforts on Blackpoll Warbler, Lesser Yellowlegs,
 
 ## Interpretation
 ### Species Richness Curves: Area Survey
-The understanding of species diversity across boreal wetlands on JBER is critical for managing and conserving bird species and their habitats, while sustaining mission readiness resources for military training purposes. Species Richness Curves, or Species Accumulation Curves are used to estimate the number of species in a particular area. During the JBER wetland surveys, common and widespread species with high detectability were encountered quickly, as reflected in the steep rise in number of species early in the survey effort (Figure 13). As the number of surveys completed increased, the rate at which new species were detected slowed as only uncommon and less detectable species were available for detection. Among all survey units, species richness was lower during the second survey period than the first period (Figure 13). This is likley a function of breeding chronology. Male passerine and shorebird species that were singing and displaying during the first survey period were inconspicuous during the second period as pairs established nests and began incubation. \par The trend in detection rate of species during the first and second survey periods was consistent across years for surveys completed on the 27 nonrandom units (Figure 14). Species richness increased quickly with survey effort during the first period and more slowly during the second period, based on the slope of each curve. Although the overall trend was consistent among years, 2017 experienced the lowest species richness during the first survey period, while 2020 experienced the lowest species richness during the second survey period. These curves do not take into account any differences in observer effort or bird identification skill. Each year of surveys, at least one observer was unique, meaning that they did not survey in any other years. \par 
+The understanding of species diversity across boreal wetlands on JBER is critical for managing and conserving bird species and their habitats, while sustaining mission readiness resources for military training purposes. Species Richness Curves, or Species Accumulation Curves are used to estimate the number of species in a particular area. During the JBER wetland surveys, common and widespread species with high detectability were encountered quickly, as reflected in the steep rise in number of species early in the survey effort (Figure 13). As the number of surveys completed increased, the rate at which new species were detected slowed as only uncommon and less detectable species were available for detection. Among all survey units, species richness was lower during the second survey period than the first period (Figure 13). This is likley a function of breeding chronology. Male passerine and shorebird species that were singing and displaying during the first survey period were inconspicuous during the second period as pairs established nests and began incubation. \par 
 
-\begin{figure}[h]
+\begin{figure}[]
 
 \caption[Species accumulation curves representing avian detections during two periods of wetland breeding bird surveys in 2020.]{Species accumulation curves representing avian detections during two periods of wetland breeding bird surveys in 2020.}
 
-```{r plot1, out.width="90%", eval=TRUE, echo=FALSE, message=FALSE}
+```{r plot1, out.width="80%", eval=TRUE, echo=FALSE, message=FALSE}
 spacc1.2020<- read.csv("data/specaccum1_2020.csv", header = TRUE)
 spacc2.2020<- read.csv("data/specaccum2_2020.csv", header = TRUE)
 
@@ -335,7 +338,6 @@ plot1 = plot(accurve1, lty= 1, ci.type="line", col="blue", lwd=2, ci.lty=0, ci.c
 plot(accurve2, lty= 1, ci.type="line", col="black", lwd=2, ci.lty=0, ci.col="lightblue", xlim=c(0,30),add = TRUE)
 legend(x=20,y=20,c("Survey Period 1","Survey Period 2"),cex=.8,col=c("blue","black"), lty = 1:1, box.lty=0)
   
-
 ```
 
 
@@ -343,7 +345,9 @@ legend(x=20,y=20,c("Survey Period 1","Survey Period 2"),cex=.8,col=c("blue","bla
 
 \end{figure}
 
-\begin{figure}[h]
+The trend in detection rate of species during the first and second survey periods was consistent across years for surveys completed on the 27 nonrandom units (Figure 14). Species richness increased quickly with survey effort during the first period and more slowly during the second period, based on the slope of each curve. Although the overall trend was consistent among years, 2017 experienced the lowest species richness during the first survey period, while 2020 experienced the lowest species richness during the second survey period. These curves do not take into account any differences in observer effort or bird identification skill. Each year of surveys, at least one observer was unique, meaning that they did not survey in any other years. \par 
+
+\begin{figure}[]
 
 \caption[Species accumulation curves representing avian detections during the early period (left) and late period (right) of wetland breeding bird surveys in 2016, 2017, 2019, and 2020.]{Species accumulation curves representing avian detections during the early period (left) and late period (right) of wetland breeding bird surveys in 2016, 2017, 2019, and 2020.}
 
@@ -400,10 +404,13 @@ par(mfrow=c(1,2))
 
 \end{figure}
 
+\pagebreak
 
 Species Richness Curves are valuable for examining actual detection trends, however, it is also useful to estimate how many species would be detected if our survey effort was increased. A Rarefaction Curve model estimates the total number of species detected representing any survey effort. For example, the rarefaction curves estimates that after 500 total individuals are observed, the predicted total number of species detected would be 45 for survey period 1 and 38 for survey period 2. Doubling the survey effort to 1,000 individuals predicts an expected total species number of 51 for period 1 and 39 for period 2. This a 13% increase for survey period 1 and a 3% increase for survey period 2. These low increase percentages suggests that additional species would likely not be breeders, and instead may represent early or late passage migrants, or wandering non-breeders, detected by chance while surveying breeding individuals. Increasing survey effort during migration periods in April and August will increase species totals among survey units. However, migratory birds use each unit differently depending on habitat type and proximity to Eagle River Flats, which supports migratory species (McDuffie et al. 2018).
 
-\begin{figure}[h]
+\par 
+
+\begin{figure}[]
 
 \caption[Species rarefaction curves representing two survey periods during wetland bird surveys in 2020.]{Species rarefaction curves representing two survey periods of wetland bird surveys in 2020.}
 
@@ -427,38 +434,10 @@ legend(x=1200,y=10,c("Survey 1", "Survey 2"),cex=.8,col=c("blue","black"), lty =
 
 \end{figure}
 
-
-### Avian Taxon Detection Trends: Area Survey
-With the completion of boreal breeding bird surveys in 2020, we have four years of data representing the same 27 nonrandom units. By comparing within year trends of raw individual observations, we determined that detections for all species groups except for loon and grebe, decreased from 2016 to 2017, but increased gradually from 2017 to 2020 (Figure XX). However, it is important to note that surveys were not completed in 2018. \par Passerines were the most dominate species group across all survey years, followed by shorebirds and waterfowl. The habitat mosaics at each survey unit clearly determine species presence and absence. For example, large waterbodies within survey units were eliminated from all survey units because SOSC do not nest on the water. Many waterfowl species were on waterbodies (off unit) when detected and therefore, were not included in the final survey model. 
-
-\begin{figure}[h]
-
-\caption[Avian taxon detection trends during wetland surveys in 2016, 2017, 2019, and 2020.]{Avian taxon detection trends during wetland surveys in 2016, 2017, 2019, and 2020}
-
-```{r plot4, eval=TRUE, echo=FALSE, message=FALSE}
-taxon<- read.csv("data/yeartrend_taxon.csv", header = TRUE)
-
-ggplot(taxon, aes(x=year, y=n, group=taxon, colour=taxon)) +
-    geom_line(size=1) +
-    ylim(0, 3000)+
-    scale_y_log10( breaks=c(1,100,500,1000,3000), limits=c(1,3000))+
-    ylab("number of individuals")+
-    xlab("year") +
-    ggtitle("Detection Trends")+
-  scale_colour_discrete(labels=c("Loons and Grebes","Gulls","Raptors","Passerines","Shorebirds","Waterfowl"))+
-  theme_classic()
-    
-```
-
-\par
-
-
-\end{figure}
-
+\pagebreak
 
 ### Species Richness: ERF Point Counts
-Species richness and diversity varied across point count locations depending on habitat type and proximity to the edge of Eagle River Flats (Figure XX). For example, points located less than 500 m from the edge of the flats had the highest species richness, on average. This is likely because species vocalizations can carry long distances across the flats, and shorter distances through the hilly and forested terrain of the proposed expansion area. The further a point was located from the flats, the lower the species richness in most cases; however, habitat type clearly influenced species richness. \par To examine the potential influence of habitat type on species richness, we subset the species data to only include individuals present 100m radius or less from the centroid of the survey point. Dominant vegetation type was determined using the directional photos taken at each point count location. Coniferous dominated habitats occurred where at least three photos showed thick spruce forest. Deciduous dominated habitats occurred where at least three photos showed open deciduous dominated forests with thin undercover. Finally, mixed deciduous dominated habitats occurred where at least three photos showed an equal mixture of spruce and deciduous trees. Although only 1 of the 10 points fell under the category of coniferous, this habitat classification supported the highest average species richness among the three habitat classifications (Figure XX).
-
+Species richness and diversity varied across point count locations depending on habitat type and proximity to the edge of Eagle River Flats (Figure 16). For example, points located less than 500 m from the edge of the flats had the highest species richness, on average. This is likely because species vocalizations can carry long distances across the flats, and shorter distances through the hilly and forested terrain of the proposed expansion area. The further a point was located from the flats, the lower the species richness in most cases; however, habitat type clearly influenced species richness. \par To examine the potential influence of habitat type on species richness, we subset the species data to only include individuals present 100m radius or less from the centroid of the survey point. Dominant vegetation type was determined using the directional photos taken at each point count location. Coniferous dominated habitats occurred where at least three photos showed thick spruce forest. Deciduous dominated habitats occurred where at least three photos showed open deciduous dominated forests with thin undercover. Finally, mixed deciduous dominated habitats occurred where at least three photos showed an equal mixture of spruce and deciduous trees. Although only 1 of the 10 points fell under the category of coniferous, this habitat classification supported the highest average species richness among the three habitat classifications (Figure 17).
 
 ```{r calc, eval=TRUE, echo=FALSE, message=FALSE, include= FALSE}
 
@@ -473,15 +452,16 @@ ddply(diverse1,~point,function(x) {
 erf.rich$diversity <-diversity(diverse1, index="shannon") #calculate shannon diversity indice
 str(erf.rich)
 erf.rich$diversity <-signif(erf.rich$diversity, digits = 3)
-erf.rich
+
 ```
 
-
-\begin{table}[h]
+\begin{table}[]
 
 \caption[Species diversity (Shannon Diversity Index) at 10 point count locations in the proposed Eagle River Flats expansion area.]{Species diversity (Shannon Diversity Index) at 10 point count locations in the proposed Eagle River Flats expansion area.}
 
 ```{r table3, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
+
+
 #Table: Species Richness
 erf.rich %>%
 kable(format="html",
@@ -499,7 +479,7 @@ kable(format="html",
     
   add_header_above(c(" " = 3, "Survey 1 (May 23)" = 3, "Survey 2 (June 6)" = 3, "Combined Surveys"= 1)) %>%
 
-as_image(erf.rich,file="table3.png", width = 4)
+as_image(erf.rich,file="table3.png", width = 18)
 ```
 \par
 
@@ -507,23 +487,11 @@ as_image(erf.rich,file="table3.png", width = 4)
 
 ![](table3.png){width=80%}
 
-\begin{figure}[h]
+```{r calc2, eval=TRUE, echo=FALSE, message=FALSE, include= FALSE}
 
-\caption[Average species richness detected at point count locations as a function of distance to Eagle River Flats and habitat classification.]{Average species richness detected at point count locations as a function of distance to Eagle River Flats and habitat classification.}
-
-```{r Figure4, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
 #Plot: Ave Species Richness by distance to ERF
 erf.rich$average <-(erf.rich$rich1 + erf.rich$rich2)/2
 erf.rich
-
-ggplot(data = erf.rich, 
-        aes(x = dist, y =average)) +
-        geom_point(stat="identity",size=3)+
-  scale_shape_manual(values=c(25, 21, 23))+
-        xlab("Distance from ERF") + 
-        ylab("Ave. Species Richness")+
-        ggtitle("Distance to Eagle River Flats")+
-        theme_minimal()
 
 #Plot: Ave Species Richness by habitat (100m subset)
 decid <-subset(erf.rich, habitat== "Deciduous") # subset deciduous rows
@@ -537,6 +505,23 @@ habitat <- c('Deciduous','Coniferous','Mixed Deciduous')
 mean <- c(dmean, cmean, mmean)
 hab.data <- data.frame(habitat, mean)
 
+```
+
+
+\begin{figure}[h]
+
+\caption[Average species richness detected at point count locations as a function of distance to Eagle River Flats and habitat classification.]{Average species richness detected at point count locations as a function of distance to Eagle River Flats and habitat classification.}
+
+```{r Figure4, out.width="50%", eval=TRUE, echo=FALSE, message=FALSE}
+
+ggplot(data = erf.rich, 
+        aes(x = dist, y =average)) +
+        geom_point(stat="identity",size=3)+
+  scale_shape_manual(values=c(25, 21, 23))+
+        xlab("Distance from ERF") + 
+        ylab("Ave. Species Richness")+
+        ggtitle("Distance to Eagle River Flats")+
+        theme_minimal()
 
 ggplot(data = hab.data, 
         aes(x=habitat, y=mean)) +
@@ -556,11 +541,12 @@ par(mfrow=c(1,2))
 
 \end{figure}
 
+\clearpage
 
 ## Conclusions
 ###Proposed Next-Steps
 ####Surveys 
-We propose to continue surveys of SOSC on lowland wetland units during 2021. Additional surveys will (1) support long-term DoD management objectives and (2) compliment the Birds and Bogs programs effort to determine differences in distribution, abundance, and habitat affinities of SOSC in Anchorage and on JBER. We recommend the scheduling of at least two survey periods during future years to accurately detect both early and late arriving species. Actual timing of surveys should be adjusted for spring phenology.\par In 2021, we propose to begin monitoring efforts of breeding birds, including Surfbird, in Snowhawk Valley and surrounding alpine ridgelines. An update of the North American Breeding Bird Survey trend results (Sauer et al. 2017; Table 6.1.1.0) for the Northwestern Interior Forest BCR (Bird Conservation Region 4), which encompasses the Anchorage boreal and alpine region, underscores the need to expand monitoring efforts to include non-wetland habitats. For example, wetland-associated SOSC focused on during 2014 - 2020 continue to show long-term declines; however, species associated with montane habitats also show steep, long-term declines.
+We propose to continue surveys of SOSC on lowland wetland units during 2021. Additional surveys will (1) support long-term DoD management objectives and (2) compliment the Birds and Bogs programs effort to determine differences in distribution, abundance, and habitat affinities of SOSC in Anchorage and on JBER. We recommend the scheduling of at least two survey periods during future years to accurately detect both early and late arriving species. Actual timing of surveys should be adjusted for spring phenology.\par In 2021, we propose to begin monitoring efforts of breeding birds, including Surfbird, in Snowhawk Valley and surrounding alpine ridgelines. An update of the North American Breeding Bird Survey trend results (Sauer et al. 2017) for the Northwestern Interior Forest BCR (Bird Conservation Region 4), which encompasses the Anchorage boreal and alpine region, underscores the need to expand monitoring efforts to include non-wetland habitats. For example, wetland-associated SOSC focused on during 2014 - 2020 continue to show long-term declines; however, species associated with montane habitats also show steep, long-term declines.
 
 ####Research 
 Lesser Yellowlegs are one of the steepest declining shorebird species in North America (Sauer et al. 2017). Although the magnitude and number of threats during the annual cycle are likely to be numerous, one known risk is sport and subsistence hunting, which occurs on several Caribbean islands and in northeastern South America. Preliminary GPS tracking data indicate that Lesser Yellowlegs breeding in Anchorage do migrate through or stopover in areas practicing shorebird harvest.\par In 2021, we will continue to coordinate biological sample collection across the species breeding range (including JBER) to map genetically distinct populations. We will then compare samples from hunter-killed birds at non-breeding sites to determine whether breeding populations are disproportionately affected. Additionally, we will continue to expand our knowledge of Lesser Yellowlegs breeding behavior and productivity by monitoring chick growth and vital rates. We do not plan to deploy additional PinPoint Argos GPS on Lesser Yellowlegs at JBER in 2021, but will continue to analyze and organize results for publication. 
@@ -573,6 +559,7 @@ data and resighting data.\par
 3. Electronic database containing 2016, 2017, 2019, and 2020 breeding bird survey "clean" data.\par 
 4. Field protocol documents for 2016-2020.\par
 5. Access to Shiny App titled Avifaunal Database for Alaska Military Lands\par  
+
 ###Follow-on Work 
 1. Analysis of apparent adult survival of Species of Special Concern.\par 
 2. Analysis of Lesser Yellowlegs productivity.\par
@@ -604,12 +591,14 @@ U.S. Shorebird Conservation Plan Partnership. 2016. U.S. shorebirds of conservat
 Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limits for shorebirds using the Western Atlantic Flyway. Wader Study 122:37-53.  \par
 
 
-## Appendix A: Species List
+\clearpage
+
+## Appendix A
 
 \begin{table}[h]
 
 \caption[Common name, scientific name, and 4-letter species code for all birds present on Joint Base Elmendorf-Richardson.]{Common name, scientific name, and 4-letter species code for all birds present on Joint Base Elmendorf-Richardson.}
-```{r appendixa, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
+```{r appendixa, out.width="90%", eval=TRUE, echo=FALSE, message=FALSE}
 
 spec<- read.csv("tables/species_table.csv", header = TRUE)
 
@@ -676,8 +665,9 @@ results.unit = results %>%
 ```
 \begin{table}[h]
 
-\caption[Status, number of individuals, and relative occurrence of bird species detected during two breeding season survey periods on lowland wetlands on Joint Base Elmendorf-Richardson, 2020.]{Appendix B. Status, number of individuals, and relative occurrence of bird species detected during two breeding season survey periods on lowland wetlands on Joint Base Elmendorf-Richardson, 2020.}
-```{r appendixb, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
+\caption[Status, number of individuals, and relative occurrence of bird species detected during two breeding season survey periods on lowland wetlands on Joint Base Elmendorf-Richardson, 2020.]{Status, number of individuals, and relative occurrence of bird species detected during two breeding season survey periods on lowland wetlands on Joint Base Elmendorf-Richardson, 2020.}
+
+```{r appendixb, out.width="90%", eval=TRUE, echo=FALSE, message=FALSE}
 #Table: Species Presence Results
 results.table<- read.csv("tables/results_table.csv", header = TRUE)
 
@@ -685,7 +675,6 @@ results.table %>%
 kable(format="html",
         escape = F, 
         col.names = c("Species", "Status", "Survey 1", "Survey 2", "Survey 1", "Survey 2", "Survey 1", "Survey 2"),
-        
       ) %>%
 
  footnote(symbol= "Survey periods were 15-17 May and 29-31 May. Status is specified as resident (Res.) for taxa that occur year-round and nest on JBER, migrant (Mig.) for species that occur on JBER during migration but do not nest, and breeder (Br.) for species that occur on JBER only as breeders. Names of Species of Special Concern are in bold and focal species are italicized.")%>%
@@ -696,7 +685,7 @@ kable(format="html",
     
   add_header_above(c(" " = 2, "Number of Indiv. (On Unit)" = 2, "Number of Pairs (On Unit)" = 2, "Proportion of Units (%)" = 2))%>%
 
- as_image(results.table,file="appendixb.png", width = 4)
+ as_image(results.table,file="appendixb.png", width = 18)
 ```
 
 \par
@@ -704,6 +693,7 @@ kable(format="html",
 \end{table}
 
 ![](appendixb.png){width=80%}
+
 
 
 ## Appendix C: Lesser Yellowlegs Project Summary
@@ -726,6 +716,7 @@ Since 2016, 182 adult Lesser Yellowlegs were banded in Anchorage, of which, 92 w
 \begin{table}[h]
 
 \caption[Summary of all Lesser Yellowlegs adults banded and resighted on Joint Base Elmendorf-Richardson, 2016-2020]{Summary of all Lesser Yellowlegs adults banded and resighted on Joint Base Elmendorf-Richardson, 2016-2020}
+
 ```{r append1, out.width="60%", eval=TRUE, echo=FALSE, message=FALSE}
 
 band<- read.csv("tables/band_table.csv", header = TRUE)
@@ -765,6 +756,7 @@ Preliminary results of autumn migratory movements indicate that birds do not use
 \par
 
 ![Fall migratory stopover locations for Lesser Yellowlegs fitted with PinPoint Argos GPS tags. Blue polygons represent U.S. military installations. These were the individuals closest to military installations in 2018-2020.](./figures/mil_map.jpg){width=80%}
+
 \par
 
 
@@ -775,4 +767,10 @@ Handel, C.M., J.R. Sauer. 2017. Combined analysis of roadside and off-road breed
 Hutt, M. B. 1991. Shooting of migrating shorebirds in Barbados. ICBP Technical Publication 12:77-91.  \par
 Sauer, J. R., D. K. Niven, J. E. Hines, D. J. Ziolkowski, Jr, K. L. Pardieck, J. E. Fallon, and W. A. Link. 2017. The North American Breeding Bird Survey, Results and Analysis 1966 - 2015. Version 2.07.2017 USGS Patuxent Wildlife Research Center, Laurel, MD. \par 
 Watts, B. D., E. T. Reed, C. Turin. 2015. Estimating sustainable mortality limits for shorebirds using the Western Atlantic Flyway. Wader Study 122:37-53.  \par
+
+
+
+
+
+
 
